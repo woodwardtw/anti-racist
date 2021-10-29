@@ -52,7 +52,6 @@ defined( 'ABSPATH' ) || exit;
                 </div>
             </div>
             <div class="col-md-6">
-                <h2>Anti-racism at Middlebury</h2>
                 <?php the_content();?>
             </div>
         </div>
@@ -73,6 +72,7 @@ defined( 'ABSPATH' ) || exit;
             <div class="media-box read">
                 <div class="media-type">READ</div>
                 <div class="media-list">
+                	<?php ar_home_resources('read');?>
                     <ul>
                         <li><a href="https://www.ibramxkendi.com/how-to-be-an-antiracist">How to be an Antiracist</a></li>
                         <li><a href="#">ITEM TWO</a></li>
@@ -132,10 +132,10 @@ defined( 'ABSPATH' ) || exit;
         </div>
          <div class="col-md-3">
             <div class="yellow">
-                <img class="twit" src="https://pbs.twimg.com/profile_images/1425793493017010182/X8_Ub5v-_200x200.jpg">
+                <img class="twit" src="https://pbs.twimg.com/profile_images/1453087176003100681/IllVr2wU_200x200.jpg">
             </div>
             <a href="https://twitter.com/tressiemcphd">Tressie McMillan Cottom</a></li>
-        </div><title></title>
+        </div>
     </div>
     <div class="row funding" id="funding">
         <div class="col-md-12">

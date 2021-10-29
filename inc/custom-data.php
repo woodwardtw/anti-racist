@@ -100,7 +100,7 @@ function create_type_taxonomies()
   register_taxonomy('Types',array('resource'), array(
     'hierarchical' => true,
     'labels' => $labels,
-    'show_ui' => false,
+    'show_ui' => true,
     'update_count_callback' => '_update_post_term_count',
     'query_var' => true,
     'rewrite' => array( 'slug' => 'type' ),

@@ -83,10 +83,30 @@ function ar_show_four_events(){
 }
 
 
- // <div class="col-md-3">
- //                <div class="event card h-100">
- //                    <div class="month">OCT</div>
- //                    <div class="day">14</div>
- //                    <div class="event-title">Speaker Series</div>
- //                </div>
- //            </div>
+function ar_home_resources(){
+	$args = array(
+		    'post_type'  => 'resource',
+		    'posts_per_page' => 5,
+		    'orderby'        => 'rand',
+		    'tax_query' => array( // (array) - use taxonomy parameters (available with Version 3.1).
+			    array(
+			      'taxonomy' => 'type', // (string) - Taxonomy.
+			      'field' => 'name', // (string) - Select taxonomy term by Possible values are 'term_id', 'name', 'slug' or 'term_taxonomy_id'. Default value is 'term_id'.
+			      'terms' => array('Read'), // (int/string/array) - Taxonomy term(s).		     		     
+			    )
+			  ),
+	);
+
+	$resource_query = new WP_Query( $args ); 
+	// The Loop
+	if ( $resource_query->have_posts() ) :
+		while ( $resource_query->have_posts() ) : $resource_query->the_post();
+		  // Do Stuff
+			var_dump('foo');
+		endwhile;
+	endif;
+
+	// Reset Post Data
+	wp_reset_postdata();
+
+}
