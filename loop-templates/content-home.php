@@ -23,14 +23,13 @@ defined( 'ABSPATH' ) || exit;
             </div>
             <!--end title block-->
             <div class="col-md-4">
-                <div class="menu">
-                    <ul>
+            	<?php wp_nav_menu( array( 'theme_location' => 'home-menu' ) ); ?>
+                   <!--  <ul>
                         <li><a href="#events">Live Events</a></li>
                         <li><a href="#resources">Learning Opportunities</a></li>
                         <li><a href="#funding">Transformative Projects</a></li>
                         <li><a href="#stories">Stories of Progress</a></li>
-                    </ul>
-                </div>
+                    </ul> -->
             </div>
             <!--end menu block-->
             <div class="col-md-5">
@@ -66,6 +65,7 @@ defined( 'ABSPATH' ) || exit;
             <div class="col-md-12 ">
                 <div class="label">EVENTS</div>
             </div>
+            <?php ar_show_four_events();?>
             <div class="col-md-3">
                 <div class="event card h-100">
                     <div class="month">OCT</div>

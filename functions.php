@@ -44,3 +44,24 @@ if ( class_exists( 'Jetpack' ) ) {
 foreach ( $understrap_includes as $file ) {
 	require_once get_theme_file_path( $understrap_inc_dir . $file );
 }
+
+//home page menu
+function ar_home_menu() {
+  register_nav_menus(
+    array(
+      'home-menu' => __( 'Home Main Menu' )
+     )
+   );
+ }
+ add_action( 'init', 'ar_home_menu' );
+
+
+//home page events
+function ar_show_four_events(){
+	$events = tribe_get_events( [ 'posts_per_page' => 4 ] );
+ 
+	// Loop through the events, displaying the title and content for each
+	foreach ( $events as $event ) {
+	   echo '<h4>' . $event->post_title . '</h4>';
+	}
+}

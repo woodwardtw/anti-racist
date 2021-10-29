@@ -43,19 +43,19 @@ h1, h2, h3, h4, .anti, .racism {
   display: block;
 }
 
-.menu {
+.menu-home-container {
     margin: 50px 10px 10px 10px;
     border-top: 30px solid $blue;
   padding-top: 10px;
 }
 
-.menu a, .etc a {
+.menu-home-container a, .etc a {
   font-size: 1.8em;
   font-weight: 700;
   color: black;
 }
 
-.menu ul, .etc ul {
+.menu-home-container ul, .etc ul {
   list-style: none;
   padding-left: 0;
   margin-left: 0;
