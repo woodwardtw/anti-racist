@@ -27,6 +27,7 @@ $understrap_includes = array(
 	'/editor.php',                          // Load Editor functions.
 	'/block-editor.php',                    // Load Block Editor functions.
 	'/acf.php',                    			// Load ACF functions.
+	'/custom-data.php',                    			// Load custom post types and taxonomies
 	'/deprecated.php',                      // Load deprecated functions.
 );
 
@@ -56,23 +57,26 @@ function ar_home_menu() {
  add_action( 'init', 'ar_home_menu' );
 
 
-//home page events
+//home page events loop
 function ar_show_four_events(){
 	$html = '';
 	$events = tribe_get_events( [ 'posts_per_page' => 4 ] );
  
 	// Loop through the events, displaying the title and content for each
 	foreach ( $events as $event ) {
+		$link = get_permalink($event->ID);
 		$date = tribe_get_start_date($event->ID, true, 'M j');
 		$month = explode(' ',$date)[0];
 		$day = explode(' ',$date)[1];
 	    $title = $event->post_title;
 	   $html .= 	"<div class='col-md-3'>
+	  			 <a href='{$link}'>
                 <div class='event card h-100'>
                     <div class='month'>{$month}</div>
                     <div class='day'>{$day}</div>
                     <div class='event-title'>{$title}</div>
                 </div>
+                </a>
             </div>";
 	}
 	return $html;
