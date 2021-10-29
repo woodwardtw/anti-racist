@@ -58,10 +58,31 @@ function ar_home_menu() {
 
 //home page events
 function ar_show_four_events(){
+	$html = '';
 	$events = tribe_get_events( [ 'posts_per_page' => 4 ] );
  
 	// Loop through the events, displaying the title and content for each
 	foreach ( $events as $event ) {
-	   echo '<h4>' . $event->post_title . '</h4>';
+		$date = tribe_get_start_date($event->ID, true, 'M j');
+		$month = explode(' ',$date)[0];
+		$day = explode(' ',$date)[1];
+	    $title = $event->post_title;
+	   $html .= 	"<div class='col-md-3'>
+                <div class='event card h-100'>
+                    <div class='month'>{$month}</div>
+                    <div class='day'>{$day}</div>
+                    <div class='event-title'>{$title}</div>
+                </div>
+            </div>";
 	}
+	return $html;
 }
+
+
+ // <div class="col-md-3">
+ //                <div class="event card h-100">
+ //                    <div class="month">OCT</div>
+ //                    <div class="day">14</div>
+ //                    <div class="event-title">Speaker Series</div>
+ //                </div>
+ //            </div>

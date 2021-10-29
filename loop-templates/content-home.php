@@ -65,35 +65,8 @@ defined( 'ABSPATH' ) || exit;
             <div class="col-md-12 ">
                 <div class="label">EVENTS</div>
             </div>
-            <?php ar_show_four_events();?>
-            <div class="col-md-3">
-                <div class="event card h-100">
-                    <div class="month">OCT</div>
-                    <div class="day">14</div>
-                    <div class="event-title">Speaker Series</div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="event card h-100">
-                    <div class="month">OCT</div>
-                    <div class="day">24</div>
-                    <div class="event-title">Another Thing</div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="event card h-100">
-                    <div class="month">NOV</div>
-                    <div class="day">4</div>
-                    <div class="event-title">Something Good</div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="event card h-100">
-                    <div class="month">NOV</div>
-                    <div class="day">8</div>
-                    <div class="event-title">A longer title of some sort</div>
-                </div>
-            </div>
+            <?php echo ar_show_four_events();?>
+          
             <a class="btn btn-ar btn-red" href="#">Find more events</a>
         </div>
     <!--end events-->
