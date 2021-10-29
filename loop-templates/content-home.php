@@ -72,12 +72,7 @@ defined( 'ABSPATH' ) || exit;
             <div class="media-box read">
                 <div class="media-type">READ</div>
                 <div class="media-list">
-                	<?php ar_home_resources('read');?>
-                    <ul>
-                        <li><a href="https://www.ibramxkendi.com/how-to-be-an-antiracist">How to be an Antiracist</a></li>
-                        <li><a href="#">ITEM TWO</a></li>
-                        <li><a href="#">ITEM TRES</a></li>
-                    </ul>
+                	<?php ar_home_resources('read');?>                    
                 </div>
             </div>
         </div>
@@ -85,11 +80,8 @@ defined( 'ABSPATH' ) || exit;
             <div class="media-box watch">
                 <div class="media-type">WATCH</div>
                 <div class="media-list">
-                    <ul>
-                        <li><a href="#">ITEM ONE</a></li>
-                        <li><a href="#">ITEM TWO</a></li>
-                        <li><a href="#">ITEM TRES</a></li>
-                    </ul>
+                    <?php ar_home_resources('watch');?>                    
+
                 </div>
             </div>
         </div>
@@ -97,11 +89,7 @@ defined( 'ABSPATH' ) || exit;
             <div class="media-box listen">
                 <div class="media-type">LISTEN</div>
                 <div class="media-list">
-                    <ul>
-                        <li><a href="#">ITEM ONE</a></li>
-                        <li><a href="#">ITEM TWO</a></li>
-                        <li><a href="#">ITEM TRES</a></li>
-                    </ul>
+                	<?php ar_home_resources('listen');?>                    
                 </div>
             </div>
         </div>

@@ -83,16 +83,17 @@ function ar_show_four_events(){
 }
 
 
-function ar_home_resources(){
+function ar_home_resources($type){
+	$list = '';
 	$args = array(
 		    'post_type'  => 'resource',
-		    'posts_per_page' => 5,
+		    'posts_per_page' => 4,
 		    'orderby'        => 'rand',
 		    'tax_query' => array( // (array) - use taxonomy parameters (available with Version 3.1).
 			    array(
-			      'taxonomy' => 'type', // (string) - Taxonomy.
-			      'field' => 'name', // (string) - Select taxonomy term by Possible values are 'term_id', 'name', 'slug' or 'term_taxonomy_id'. Default value is 'term_id'.
-			      'terms' => array('Read'), // (int/string/array) - Taxonomy term(s).		     		     
+			      'taxonomy' => 'Types', // (string) - Taxonomy.
+			      'field' => 'slug', // (string) - Select taxonomy term by Possible values are 'term_id', 'name', 'slug' or 'term_taxonomy_id'. Default value is 'term_id'.
+			      'terms' => array($type), // (int/string/array) - Taxonomy term(s).		     		     
 			    )
 			  ),
 	);
@@ -102,8 +103,13 @@ function ar_home_resources(){
 	if ( $resource_query->have_posts() ) :
 		while ( $resource_query->have_posts() ) : $resource_query->the_post();
 		  // Do Stuff
-			var_dump('foo');
+			$title = get_the_title();
+			$url = get_field('link');
+			$list .=  "<li><a href='{$url}'>{$title}</a></li>";
 		endwhile;
+		echo "
+			<ul>{$list}</ul>
+		";
 	endif;
 
 	// Reset Post Data
