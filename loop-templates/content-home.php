@@ -48,17 +48,12 @@ defined( 'ABSPATH' ) || exit;
         <div class="row intro">
             <div class="col-md-6">
                 <div class="green">
-                    <img src="https://archive.org/download/mohpc_sanctuaryCampus2017_DSC_9895/DSC_9895.jpg">
+                	<?php echo get_the_post_thumbnail(get_the_ID(),'large');?>
                 </div>
             </div>
             <div class="col-md-6">
                 <h2>Anti-racism at Middlebury</h2>
-                <p>Ergo, si semel tristior effectus est, hilara vita amissa est? Ut non sine causa ex iis memoriae ducta sit disciplina. Satisne vobis videor pro meo iure in vestris auribus commentatus? Duo Reges: constructio interrete.
-                </p>
-                <p>Ecommentatus? Duo Reges: constructio interrete. Quae contraria sunt his, malane? Itaque a sapientia praecipitur se ipsam, si usus sit, sapiens ut relinquat. Respondeat totidem verbis. Praeclare hoc quidem.
-                </p>
-                <p>Donstructio interrete. Quae contraria sunt his, malane? Itaque a sapientia praecipitur se ipsam, si usus sit, sapiens ut relinquat. Respondeat totidem verbis. Praeclare hoc quidem.
-                </p>
+                <?php the_content();?>
             </div>
         </div>
         <div class="row events" id="events">

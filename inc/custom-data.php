@@ -111,3 +111,5 @@ function create_type_taxonomies()
   ));
 }
 
+
+
