@@ -19,7 +19,7 @@ function create_resource_cpt() {
   $labels = array(
     'name' => __( 'Resources', 'Post Type General Name', 'textdomain' ),
     'singular_name' => __( 'Resource', 'Post Type Singular Name', 'textdomain' ),
-    'menu_name' => __( 'Resource', 'textdomain' ),
+    'menu_name' => __( 'Resources', 'textdomain' ),
     'name_admin_bar' => __( 'Resource', 'textdomain' ),
     'archives' => __( 'Resource Archives', 'textdomain' ),
     'attributes' => __( 'Resource Attributes', 'textdomain' ),
@@ -46,7 +46,7 @@ function create_resource_cpt() {
     'filter_items_list' => __( 'Filter Resource list', 'textdomain' ),
   );
   $args = array(
-    'label' => __( 'resource', 'textdomain' ),
+    'label' => __( 'Resources', 'textdomain' ),
     'description' => __( '', 'textdomain' ),
     'labels' => $labels,
     'menu_icon' => '',
@@ -65,7 +65,7 @@ function create_resource_cpt() {
     'show_in_rest' => true,
     'publicly_queryable' => true,
     'capability_type' => 'post',
-    'menu_icon' => 'dashicons-universal-access-alt',
+    'menu_icon' => 'dashicons-admin-links',
   );
   register_post_type( 'resource', $args );
   
@@ -113,3 +113,68 @@ function create_type_taxonomies()
 
 
 
+//people custom post type
+
+// Register Custom Post Type people
+// Post Type Key: people
+
+function create_people_cpt() {
+
+  $labels = array(
+    'name' => __( 'people', 'Post Type General Name', 'textdomain' ),
+    'singular_name' => __( 'People', 'Post Type Singular Name', 'textdomain' ),
+    'menu_name' => __( 'People', 'textdomain' ),
+    'name_admin_bar' => __( 'People', 'textdomain' ),
+    'archives' => __( 'People Archives', 'textdomain' ),
+    'attributes' => __( 'People Attributes', 'textdomain' ),
+    'parent_item_colon' => __( 'People:', 'textdomain' ),
+    'all_items' => __( 'All Peoples', 'textdomain' ),
+    'add_new_item' => __( 'Add New People', 'textdomain' ),
+    'add_new' => __( 'Add New', 'textdomain' ),
+    'new_item' => __( 'New People', 'textdomain' ),
+    'edit_item' => __( 'Edit People', 'textdomain' ),
+    'update_item' => __( 'Update People', 'textdomain' ),
+    'view_item' => __( 'View People', 'textdomain' ),
+    'view_items' => __( 'View Peoples', 'textdomain' ),
+    'search_items' => __( 'Search Peoples', 'textdomain' ),
+    'not_found' => __( 'Not found', 'textdomain' ),
+    'not_found_in_trash' => __( 'Not found in Trash', 'textdomain' ),
+    'featured_image' => __( 'Featured Image', 'textdomain' ),
+    'set_featured_image' => __( 'Set featured image', 'textdomain' ),
+    'remove_featured_image' => __( 'Remove featured image', 'textdomain' ),
+    'use_featured_image' => __( 'Use as featured image', 'textdomain' ),
+    'insert_into_item' => __( 'Insert into people', 'textdomain' ),
+    'uploaded_to_this_item' => __( 'Uploaded to this people', 'textdomain' ),
+    'items_list' => __( 'People list', 'textdomain' ),
+    'items_list_navigation' => __( 'People list navigation', 'textdomain' ),
+    'filter_items_list' => __( 'Filter People list', 'textdomain' ),
+  );
+  $args = array(
+    'label' => __( 'people', 'textdomain' ),
+    'description' => __( '', 'textdomain' ),
+    'labels' => $labels,
+    'menu_icon' => '',
+    'supports' => array('title', 'editor', 'revisions', 'author', 'trackbacks', 'custom-fields', 'thumbnail',),
+    'taxonomies' => array('category', 'post_tag'),
+    'public' => true,
+    'show_ui' => true,
+    'show_in_menu' => true,
+    'menu_position' => 5,
+    'show_in_admin_bar' => true,
+    'show_in_nav_menus' => true,
+    'can_export' => true,
+    'has_archive' => true,
+    'hierarchical' => false,
+    'exclude_from_search' => false,
+    'show_in_rest' => true,
+    'publicly_queryable' => true,
+    'capability_type' => 'post',
+    'menu_icon' => 'dashicons-admin-users',
+  );
+  register_post_type( 'people', $args );
+  
+  // flush rewrite rules because we changed the permalink structure
+  global $wp_rewrite;
+  $wp_rewrite->flush_rules();
+}
+add_action( 'init', 'create_people_cpt', 0 );
