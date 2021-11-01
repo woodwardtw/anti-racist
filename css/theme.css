@@ -16262,7 +16262,11 @@ a .event-title {
 }
 
 .media-list ul li {
-  line-height: 1.1em;
+  line-height: 1.4em;
+}
+
+.media-list li {
+  margin-bottom: 15px;
 }
 
 ul li a {
