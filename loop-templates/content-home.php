@@ -11,40 +11,7 @@ defined( 'ABSPATH' ) || exit;
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-	<div class="container-fluid">
-        <div class="row header">
-            <div class="col-md-3">
-                <div class="title">
-                    <h1>
-                        <span class="anti">ANTI</span>
-                        <span class="racism">RACISM</span>
-                    </h1>
-                </div>
-            </div>
-            <!--end title block-->
-            <div class="col-md-4">
-            	<?php wp_nav_menu( array( 'theme_location' => 'home-menu' ) ); ?>
-                   <!--  <ul>
-                        <li><a href="#events">Live Events</a></li>
-                        <li><a href="#resources">Learning Opportunities</a></li>
-                        <li><a href="#funding">Transformative Projects</a></li>
-                        <li><a href="#stories">Stories of Progress</a></li>
-                    </ul> -->
-            </div>
-            <!--end menu block-->
-            <div class="col-md-5">
-                <div class="etc">
-                    <div class="quote">"To be antiracist is a radical choice in the face of history, requiring a radical reorientation of our consciousness."
-                    </div>
-                    <div class="quote-source">IBRAM X. KENDI</div>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <div class="tag-line">
-                    &nbsp;
-                </div>
-            </div>
-        </div>
+	<div class="container-fluid">    
         <div class="row intro">
             <div class="col-md-6">
                 <div class="green">
