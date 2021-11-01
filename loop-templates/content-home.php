@@ -100,12 +100,12 @@ defined( 'ABSPATH' ) || exit;
            
     </div>
     <!--end funding-->
-    <div class="row stories" id="stories">
+    <!-- <div class="row stories" id="stories">
         <div class="col-md-12">
             <div class="label">Stories</div>
         </div>
   
-    </div>
+    </div> -->
   </div>
 	<footer class="entry-footer">
 

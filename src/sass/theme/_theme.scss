@@ -234,8 +234,8 @@ img {
 .red img,
 .yellow img {
 				mix-blend-mode: screen;
-				-webkit-filter: grayscale(100%) contrast(200%);
-				filter: grayscale(200%) contrast(200%);
+				-webkit-filter: grayscale(200%) contrast(140%) brightness(1.3);
+				filter: grayscale(200%) contrast(140%) brightness(1.5);
 				opacity: 1;
 				border: 5px solid;
 }
