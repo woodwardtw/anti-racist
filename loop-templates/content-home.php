@@ -125,37 +125,12 @@ defined( 'ABSPATH' ) || exit;
             <a href="https://twitter.com/tressiemcphd">Tressie McMillan Cottom</a></li>
         </div>
     </div>
-    <div class="row funding" id="funding">
+    <div class="row justify-content-center funding" id="funding">
         <div class="col-md-12">
             <div class="label">Funding</div>
         </div>
-        <div class="col-md-4">
-            <div class="funding-details">
-                <h2>Opportunity 1</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae autem degendae ratio maxime quidem illis placuit quieta. Quid enim tanto opus est instrumento in optimis artibus comparandis? Itaque hic ipse iam pridem est reiectus; Dempta enim aeternitate nihilo beatior Iuppiter quam Epicurus; Illis videtur, qui illud non dubitant bonum dicere -; Itaque et manendi in vita et migrandi ratio omnis iis rebus, quas supra dixi, metienda.
-                </p>
-                <a class="btn btn-ar btn-red" href="#">Apply</a>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="funding-details">
-                <h2>Opportunity 2</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae autem degendae ratio maxime quidem illis placuit quieta. Quid enim tanto opus est instrumento in optimis artibus comparandis? Itaque hic ipse iam pridem est reiectus; Dempta enim aeternitate nihilo beatior Iuppiter quam Epicurus; Illis videtur, qui illud non dubitant bonum dicere -; Itaque et manendi in vita et migrandi ratio omnis iis rebus, quas supra dixi, metienda.
-                </p>
-                <a class="btn btn-ar btn-red" href="#">Apply</a>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="funding-details">
-                <h2>Opportunity 3</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae autem degendae ratio maxime quidem illis placuit quieta. Quid enim tanto opus est instrumento in optimis artibus comparandis? Itaque hic ipse iam pridem est reiectus; Dempta enim aeternitate nihilo beatior Iuppiter quam Epicurus; Illis videtur, qui illud non dubitant bonum dicere -; Itaque et manendi in vita et migrandi ratio omnis iis rebus, quas supra dixi, metienda.
-                </p>
-                <a class="btn btn-ar btn-red" href="#">Apply</a>
-            </div>
-        </div>
+        <?php echo ar_funding_opps();?>
+           
     </div>
     <!--end funding-->
     <div class="row stories" id="stories">
