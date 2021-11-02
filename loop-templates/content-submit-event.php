@@ -1,6 +1,6 @@
 <?php
 /**
- * Partial template for content in submit-resource.php
+ * Partial template for content in submit-event.php
  *
  * @package Understrap
  */
