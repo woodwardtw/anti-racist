@@ -35,10 +35,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 			    <div class="row header">
             <div class="col-md-3">
                 <div class="title">
-                    <h1>
-                        <span class="anti">ANTI</span>
-                        <span class="racism">RACISM</span>
-                    </h1>
+                    <a href="<?php echo site_url();?>">
+                        <h1>
+                            <span class="anti">ANTI</span>
+                            <span class="racism">RACISM</span>
+                        </h1>
+                    </a>
                 </div>
             </div>
             <!--end title block-->
