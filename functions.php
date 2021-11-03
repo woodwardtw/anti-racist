@@ -60,7 +60,11 @@ function ar_home_menu() {
 //home page events loop
 function ar_show_four_events(){
 	$html = '';
-	$events = tribe_get_events( [ 'posts_per_page' => 4, 'start_date'     => 'now', ] );
+	$events = tribe_get_events( [ 
+			'posts_per_page' => 4, 
+			'start_date' => 'now',
+		]
+	);
  
 	// Loop through the events, displaying the title and content for each
 	foreach ( $events as $event ) {

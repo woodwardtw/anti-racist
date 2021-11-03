@@ -28,7 +28,7 @@ defined( 'ABSPATH' ) || exit;
             </div>
             <?php echo ar_show_four_events();?>
             <div class="col-md-12 ">
-                <a class="btn btn-ar btn-red" href="#">Find more events</a>
+                <a class="btn btn-ar btn-red" href="events">Find more events</a>
             </div>
         </div>
     <!--end events-->
