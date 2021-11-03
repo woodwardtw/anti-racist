@@ -118,5 +118,45 @@ function ar_home_resources($type){
 
 	// Reset Post Data
 	wp_reset_postdata();
+}
 
+
+function ar_gf_event_update($entry, $form ){
+	$created_posts = gform_get_meta( $entry['id'], 'gravityformsadvancedpostcreation_post_id' );
+    foreach ( $created_posts as $post )
+    {
+        $post_id = $post['post_id'];
+        // Do your stuff here.
+        $registration = rgar( $entry, '7' );		   
+        $info = rgar( $entry, '8' );		
+        if($registration)   {
+        	update_post_meta($post_id, 'reg_url', $registration);
+        }
+        if($info){
+        	update_post_meta($post_id, 'info_url', $info);
+        }		   
+    }
+}
+
+add_action( 'gform_after_submission_1', 'ar_gf_event_update', 10, 2 );
+
+add_filter( 'the_content', 'ar_events_content_fitler', 1 );
+ 
+function ar_events_content_fitler( $content ) {
+	global $post;
+	$post_id = $post->ID;
+    // Check if we're inside the main loop in a single Post.
+    if ( 'tribe_events' == get_post_type()) {
+    		$info = get_post_meta($post_id, 'info_url', true);
+    		$reg = get_post_meta($post_id, 'reg_url', true);
+    		$html = '';
+    		if($info){
+    			$html = "<a class='btn btn-ar' href='{$info}'>More information</a>";
+    		}
+    		if($reg){
+    			$html .= "<a class='btn btn-ar' href='{$reg}'>Register</a>";
+    		}
+        return $content . $html;
+    }
+    return $content;
 }
