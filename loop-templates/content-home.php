@@ -26,11 +26,13 @@ defined( 'ABSPATH' ) || exit;
             <div class="col-md-12 ">
                 <div class="label">SHOW UP</div>
             </div>
-            <?php echo ar_show_four_events();?>
-            <div class="col-md-12 ">
+            <?php echo ar_show_four_events();?>  
+            <div class="col-md-12">
                 <a class="btn btn-ar btn-blue" href="events">Find more events</a>
-            </div>
+                <a class="btn btn-ar btn-blue" href="add-event">Add an event</a> 
+            </div>       
         </div>
+
     <!--end events-->
     <div class="row media" id="resources">
         <div class="col-md-12">
@@ -61,12 +63,13 @@ defined( 'ABSPATH' ) || exit;
                 </div>
             </div>
         </div>
-        <a class="btn btn-ar btn-blue" href="#">Find more resources</a>
+        <a class="btn btn-ar btn-blue" href="diy-learning">Find more resources</a>
+        <a class="btn btn-ar btn-blue" href="contribute-resource/">Add a resource</a>
     </div>
     <!--end media/resources-->
     <div class="row" id="people">
     	 <div class="col-md-12">
-            <div class="label">PEOPLE</div>
+            <div class="label">ANTI-RACISTS</div>
         </div>
         <div class="col-md-3">
             <div class="red">
@@ -92,6 +95,8 @@ defined( 'ABSPATH' ) || exit;
             </div>
             <a href="https://twitter.com/tressiemcphd">Tressie McMillan Cottom</a></li>
         </div>
+         <a class="btn btn-ar btn-blue" href="anti-racists">Find more anti-racists</a>
+        <a class="btn btn-ar btn-blue" href="contribute-anti-racists">Add an anti-racist</a>
     </div>
     <div class="row justify-content-center funding" id="funding">
         <div class="col-md-12">
