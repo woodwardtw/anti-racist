@@ -147,6 +147,57 @@ function ar_home_news(){
 
 }
 
+function ar_home_people(){
+	$list = '';
+	$args = array(
+		    'post_type'  => 'people',
+		    'posts_per_page' => 4,
+		    'orderby'        => 'rand',		    
+	);
+
+	$people_query = new WP_Query( $args ); 
+	// The Loop
+	$html = '';
+	$count = 0;
+	if ( $people_query->have_posts() ) :
+		while ( $people_query->have_posts() ) : $people_query->the_post(); $count++;
+		  // Do Stuff
+			$title = get_the_title();
+			$color = ar_color_picker($count);
+			$img = get_the_post_thumbnail_url();
+			$url = get_permalink(); // change to this when people single post is more robust
+			//$description = get_content; //if we want to show more content at some point
+			$html .=  "<div class='col-md-3'>
+									<div class='{$color}'>
+                <img class='twit' src='{$img}' alt='Profile image for {$title}.'>
+            </div>
+            <a href='{$url}'>{$title}</a></li>
+        </div>
+			";
+		endwhile;		
+	endif;
+	return $html;
+	// Reset Post Data
+	wp_reset_postdata();
+}
+
+
+function ar_color_picker($count){
+		if ($count == 1){
+			return 'blue';
+		}
+		if ($count == 2){
+			return 'red';
+		}
+		if ($count == 3){
+			return 'green';
+		}
+		if ($count == 4){
+			return 'yellow';
+		}
+}
+
+
 function ar_gf_event_update($entry, $form ){
 	$created_posts = gform_get_meta( $entry['id'], 'gravityformsadvancedpostcreation_post_id' );
     foreach ( $created_posts as $post )

@@ -71,30 +71,7 @@ defined( 'ABSPATH' ) || exit;
     	 <div class="col-md-12">
             <div class="label">ANTI-RACISTS</div>
         </div>
-        <div class="col-md-3">
-            <div class="red">
-                <img class="twit" src="https://pbs.twimg.com/profile_images/911210240187731969/gEonmNwX_200x200.jpg">
-            </div>
-            <a href="https://twitter.com/DrIbram">Ibram X. Kendi</a>
-        </div>
-        <div class="col-md-3">
-            <div class="green">
-                <img class="twit" src="https://pbs.twimg.com/profile_images/1017569498340024320/aNtgQT1J_200x200.jpg">
-            </div>
-            <a href="https://twitter.com/IjeomaOluo">Ijeoma Oluo</a></li>
-        </div>
-         <div class="col-md-3">
-            <div class="blue">
-                <img class="twit" src="https://pbs.twimg.com/profile_images/840867826504204288/ZHyk1xxD_200x200.jpg">
-            </div>
-            <a href="https://twitter.com/renireni">Reni Eddo-Lodge</a></li>
-        </div>
-         <div class="col-md-3">
-            <div class="yellow">
-                <img class="twit" src="https://pbs.twimg.com/profile_images/1453087176003100681/IllVr2wU_200x200.jpg">
-            </div>
-            <a href="https://twitter.com/tressiemcphd">Tressie McMillan Cottom</a></li>
-        </div>
+        <?php echo ar_home_people();?>
          <a class="btn btn-ar btn-blue" href="anti-racists">Find more anti-racists</a>
         <a class="btn btn-ar btn-blue" href="contribute-anti-racists">Add an anti-racist</a>
     </div>
