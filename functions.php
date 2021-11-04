@@ -230,9 +230,9 @@ function ar_gf_event_update($entry, $form ){
 
 add_action( 'gform_after_submission_1', 'ar_gf_event_update', 10, 2 );
 
-add_filter( 'the_content', 'ar_events_content_fitler', 1 );
+add_filter( 'the_content', 'ar_events_content_titler', 1 );
  
-function ar_events_content_fitler( $content ) {
+function ar_events_content_titler( $content ) {
 	global $post;
 	$post_id = $post->ID;
     // Check if we're inside the main loop in a single Post.
@@ -250,3 +250,34 @@ function ar_events_content_fitler( $content ) {
     }
     return $content;
 }
+
+//Auto add and update Title field: https://support.advancedcustomfields.com/forums/topic/using-acf_form-add-post-title/
+
+function ar_acf_save_people_title( $post_id ) {
+    // Don't do this on the ACF post type
+    if ( get_post_type( $post_id ) == 'people' ){
+    	  // Get the Fields
+    $fields = get_field_objects( $post_id );
+
+    // Prevent Infinite Looping...
+    remove_action( 'acf/save_post', 'ar_acf_save_people_title' );
+
+    // Grab Post Data from the Form
+    $post = array(
+        'ID'           => $post_id,
+        'post_title'   => $fields['name']['value'],
+    );
+
+    // Update the Post
+    wp_update_post( $post );
+
+    // Continue save action
+    add_action( 'acf/save_post', 'ar_acf_save_people_title' );
+
+    // Set the Return URL in Case of 'new' Post
+    $_POST['return'] = add_query_arg( 'updated', 'true', get_permalink( $post_id ) );
+
+    }
+  
+}
+add_action( 'acf/save_post', 'ar_acf_save_people_title', 10, 1 );
