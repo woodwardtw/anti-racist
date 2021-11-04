@@ -165,7 +165,8 @@ function ar_home_people(){
 			$title = get_the_title();
 			$color = ar_color_picker($count);
 			$img = get_the_post_thumbnail_url();
-			$url = get_permalink(); // change to this when people single post is more robust
+			//$url = get_permalink(); // change to this when people single post is more robust
+			$url = ar_return_first_person_link();
 			//$description = get_content; //if we want to show more content at some point
 			$html .=  "<div class='col-md-3'>
 									<div class='{$color}'>
@@ -181,7 +182,7 @@ function ar_home_people(){
 	wp_reset_postdata();
 }
 
-
+//for picking the color of the photo wash in the people loop on the home page
 function ar_color_picker($count){
 		if ($count == 1){
 			return 'blue';
@@ -196,6 +197,18 @@ function ar_color_picker($count){
 			return 'yellow';
 		}
 }
+
+//just gives the link from the repeater field of links for a person on the home page
+function ar_return_first_person_link(){
+			if( have_rows('links') ):
+				$links = get_field('links');
+				$url = $links[0]['url'];
+	      return $url;
+		else :
+		    // Do something...
+		endif;
+}
+
 
 
 function ar_gf_event_update($entry, $form ){
