@@ -25,7 +25,7 @@ function ar_funding_opps(){
                          <div class='funding-details'>
                             <h2>{$title}</h2>
                             {$text}
-                            <a class='btn btn-ar btn-blue' href='{$link}'>foo</a>
+                            <a class='btn btn-ar btn-blue' href='{$link}'>Apply</a>
                         </div>
                     </div>";
         // End loop.
