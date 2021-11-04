@@ -105,8 +105,8 @@ defined( 'ABSPATH' ) || exit;
     <div class="row stories" id="news">
         <div class="col-md-12">
             <div class="label">News</div>
-            <?php echo ar_home_news();?>
         </div>
+            <?php echo ar_home_news();?>
   
     </div>
     <!--end news-->
