@@ -136,7 +136,7 @@ function ar_home_news(){
 			$title = get_the_title();
 			$url = get_permalink();
 			$excerpt = get_the_excerpt();
-			$html .=  "<div class='col-md-3'><div class='news'><a href='{$url}'><h2>{$title}</h2></a><p>{$excerpt}</p></div></div>";
+			$html .=  "<div class='col-md-3'><div class='news card h-100'><a href='{$url}'><h2>{$title}</h2></a><p>{$excerpt}</p></div></div>";
 		endwhile;
 	endif;
 
