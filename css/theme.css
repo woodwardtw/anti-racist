@@ -16378,6 +16378,20 @@ img {
   margin-top: 5px;
 }
 
+.news {
+  padding: 20px;
+  border: 5px solid #556E4E;
+}
+
+.news a h2 {
+  color: #556E4E;
+}
+
+/*TEMPORARY*/
+.understrap-read-more-link {
+  display: none;
+}
+
 @media only screen and (max-width: 800px) {
   .label {
     font-family: "Kanit", sans-serif;
