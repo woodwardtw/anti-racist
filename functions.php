@@ -200,13 +200,19 @@ function ar_color_picker($count){
 
 //just gives the link from the repeater field of links for a person on the home page
 function ar_return_first_person_link(){
-			if( have_rows('links') ):
-				$links = get_field('links');
-				$url = $links[0]['url'];
-	      return $url;
-		else :
-		    // Do something...
-		endif;
+			if(get_field('twitter')){
+				return get_field('twitter');
+			}
+			if(get_field('personal_site')){
+				return get_field('personal_site');
+			}
+			if(get_field('tiktok')){
+				return get_field('tiktok');
+			}
+			if(get_field('instagram')){
+				return get_field('instagram');
+			}
+
 }
 
 
