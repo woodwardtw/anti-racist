@@ -101,6 +101,15 @@ defined( 'ABSPATH' ) || exit;
            
     </div>
     <!--end funding-->
+    <!--news-->
+    <div class="row stories" id="news">
+        <div class="col-md-12">
+            <div class="label">News</div>
+            <?php echo ar_home_news();?>
+        </div>
+  
+    </div>
+    <!--end news-->
     <!-- <div class="row stories" id="stories">
         <div class="col-md-12">
             <div class="label">Stories</div>

@@ -56,6 +56,10 @@ function ar_home_menu() {
  }
  add_action( 'init', 'ar_home_menu' );
 
+function new_excerpt_more( $more ) {
+    return '';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
 
 //home page events loop
 function ar_show_four_events(){
@@ -120,6 +124,31 @@ function ar_home_resources($type){
 	wp_reset_postdata();
 }
 
+
+function ar_home_news(){
+	$html = '';
+	$args = array(
+		    'post_type'  => 'post',
+		    'posts_per_page' => 4,
+		    'category_name' => 'news',
+	);
+  $news_query = new WP_Query( $args ); 
+  // The Loop
+	if ( $news_query->have_posts() ) :
+		while ( $news_query->have_posts() ) : $news_query->the_post();
+		  // Do Stuff
+			$title = get_the_title();
+			$url = get_permalink();
+			$excerpt = get_the_excerpt();
+			$html .=  "<div class='col-md-3'><a href='{$url}'><h2>{$title}</h2></a><p>{$excerpt}</p></div>";
+		endwhile;
+		return $html;
+	endif;
+
+	// Reset Post Data
+	wp_reset_postdata();
+
+}
 
 function ar_gf_event_update($entry, $form ){
 	$created_posts = gform_get_meta( $entry['id'], 'gravityformsadvancedpostcreation_post_id' );

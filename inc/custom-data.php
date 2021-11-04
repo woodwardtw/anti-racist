@@ -101,6 +101,7 @@ function create_type_taxonomies()
     'hierarchical' => true,
     'labels' => $labels,
     'show_ui' => true,
+    'meta_box_cb'                => false,
     'update_count_callback' => '_update_post_term_count',
     'query_var' => true,
     'rewrite' => array( 'slug' => 'type' ),
