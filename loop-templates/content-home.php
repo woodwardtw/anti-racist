@@ -24,7 +24,7 @@ defined( 'ABSPATH' ) || exit;
         </div>
         <div class="row events" id="events">
             <div class="col-md-12 ">
-                <div class="label">EVENTS</div>
+                <div class="label">SHOW UP</div>
             </div>
             <?php echo ar_show_four_events();?>
             <div class="col-md-12 ">
@@ -34,7 +34,7 @@ defined( 'ABSPATH' ) || exit;
     <!--end events-->
     <div class="row media" id="resources">
         <div class="col-md-12">
-            <div class="label">RESOURCES</div>
+            <div class="label">DIY LEARNING</div>
         </div>
         <div class="col-md-4">
             <div class="media-box read">

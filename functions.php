@@ -109,7 +109,8 @@ function ar_home_resources($type){
 		  // Do Stuff
 			$title = get_the_title();
 			$url = get_field('link');
-			$list .=  "<li><a href='{$url}'>{$title}</a></li>";
+			$description = get_field('summary');
+			$list .=  "<li><a href='{$url}'>{$title}</a><p>{$description}</p></li>";
 		endwhile;
 		echo "
 			<ul>{$list}</ul>
