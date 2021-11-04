@@ -3,38 +3,36 @@
     "title": "Event",
     "fields": [
         {
-            "key": "field_61812c385cddd",
-            "label": "Start Date",
-            "name": "start_date",
-            "type": "date_time_picker",
+            "key": "field_61842b4ff7a25",
+            "label": "Registration Link",
+            "name": "registration_link",
+            "type": "url",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
-            "display_format": "d\/m\/Y g:i a",
-            "return_format": "d\/m\/Y g:i a",
-            "first_day": 1
+            "default_value": "",
+            "placeholder": ""
         },
         {
-            "key": "field_61812c753db80",
-            "label": "End Date",
-            "name": "end_date",
-            "type": "date_time_picker",
+            "key": "field_61842b5cf7a26",
+            "label": "More information link",
+            "name": "more_information_link",
+            "type": "url",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
-            "display_format": "d\/m\/Y g:i a",
-            "return_format": "d\/m\/Y g:i a",
-            "first_day": 1
+            "default_value": "",
+            "placeholder": ""
         }
     ],
     "location": [
@@ -54,5 +52,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1635855517
+    "modified": 1636053371
 }

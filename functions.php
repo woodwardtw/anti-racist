@@ -226,10 +226,12 @@ function ar_gf_event_update($entry, $form ){
         $registration = rgar( $entry, '7' );		   
         $info = rgar( $entry, '8' );		
         if($registration)   {
-        	update_post_meta($post_id, 'reg_url', $registration);
+        	update_post_meta($post_id, 'registration_link', $registration);
+        	update_field('_registration_link', 'field_61842b4ff7a25', $post_id);
         }
         if($info){
-        	update_post_meta($post_id, 'info_url', $info);
+        	update_post_meta($post_id, 'more_information_link', $info);
+        	update_field('_more_information_link', 'field_61842b5cf7a26', $post_id);
         }		   
     }
 }
@@ -243,13 +245,19 @@ function ar_events_content_titler( $content ) {
 	$post_id = $post->ID;
     // Check if we're inside the main loop in a single Post.
     if ( 'tribe_events' == get_post_type()) {
-    		$info = get_post_meta($post_id, 'info_url', true);
-    		$reg = get_post_meta($post_id, 'reg_url', true);
+	    
+	    	if(get_field('more_information_link',$post_id)){
+	    		$info = get_field('more_information_link',$post_id);
+	    	}
+	    	if(get_field('registration_link',$post_id)){
+	    		$reg = get_field('registration_link',$post_id);
+	    	}
+
     		$html = '';
-    		if($info){
+    		if(isset($info)){
     			$html = "<a class='btn btn-ar' href='{$info}'>More information</a>";
     		}
-    		if($reg){
+    		if(isset($reg)){
     			$html .= "<a class='btn btn-ar' href='{$reg}'>Register</a>";
     		}
         return $content . $html;
