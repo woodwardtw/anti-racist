@@ -16085,7 +16085,8 @@ figure.woocommerce-product-gallery__wrapper {
 }
 
 body {
-  background-color: #fcf9ed;
+  background-color: #fff;
+  /*#fcf9ed*/
 }
 
 h1,
@@ -16361,8 +16362,8 @@ img {
   font-weight: 700;
 }
 
-.btn-red {
-  background-color: #D15252;
+.btn-blue {
+  background-color: #95B1C1;
 }
 
 .label {

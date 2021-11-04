@@ -56,10 +56,6 @@ function ar_home_menu() {
  }
  add_action( 'init', 'ar_home_menu' );
 
-function new_excerpt_more( $more ) {
-    return '';
-}
-add_filter('excerpt_more', 'new_excerpt_more');
 
 //home page events loop
 function ar_show_four_events(){
@@ -140,13 +136,13 @@ function ar_home_news(){
 			$title = get_the_title();
 			$url = get_permalink();
 			$excerpt = get_the_excerpt();
-			$html .=  "<div class='col-md-3'><a href='{$url}'><h2>{$title}</h2></a><p>{$excerpt}</p></div>";
+			$html .=  "<div class='col-md-3'><div class='news'><a href='{$url}'><h2>{$title}</h2></a><p>{$excerpt}</p></div></div>";
 		endwhile;
-		return $html;
 	endif;
 
 	// Reset Post Data
 	wp_reset_postdata();
+		return $html;
 
 }
 
