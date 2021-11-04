@@ -130,12 +130,11 @@
         "author",
         "format",
         "page_attributes",
-        "featured_image",
         "categories",
         "tags",
         "send-trackbacks"
     ],
     "active": true,
     "description": "",
-    "modified": 1636050557
+    "modified": 1636051272
 }
