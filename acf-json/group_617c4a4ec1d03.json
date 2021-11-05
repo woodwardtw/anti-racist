@@ -46,7 +46,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -58,6 +58,27 @@
             "return_format": "id",
             "multiple": 0,
             "allow_null": 0
+        },
+        {
+            "key": "field_61852516116b5",
+            "label": "Estimated Time to Read\/Watch\/Listen",
+            "name": "eta",
+            "type": "number",
+            "instructions": "Indicate your best guess in minutes",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
         }
     ],
     "location": [
@@ -92,5 +113,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1635535764
+    "modified": 1636115839
 }
