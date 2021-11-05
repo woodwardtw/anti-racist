@@ -51,13 +51,13 @@
                 "id": ""
             },
             "taxonomy": "Types",
-            "field_type": "checkbox",
-            "add_term": 1,
+            "field_type": "radio",
+            "allow_null": 0,
+            "add_term": 0,
             "save_terms": 1,
             "load_terms": 1,
             "return_format": "object",
-            "multiple": 0,
-            "allow_null": 0
+            "multiple": 0
         },
         {
             "key": "field_61852516116b5",
@@ -113,5 +113,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1636116949
+    "modified": 1636118017
 }

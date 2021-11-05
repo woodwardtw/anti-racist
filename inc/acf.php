@@ -39,12 +39,12 @@ function ar_funding_opps(){
 }
 
 
-//resource to build link button
+//resource to build link button in resources
 function ar_go_to_link(){
     global $post;
     $post_id = $post->ID;
     $link = get_field('link');
-    $type = get_field('type')[0]->name;
+    $type = get_field('type')->name;
     return "<a class='resource-link btn btn-ar' href='{$link}'>Click to {$type} and Learn</a>";
 }
 
