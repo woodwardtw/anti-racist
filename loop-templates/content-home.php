@@ -72,7 +72,7 @@ defined( 'ABSPATH' ) || exit;
             <div class="label">ANTI-RACISTS</div>
         </div>
         <?php echo ar_home_people();?>
-         <a class="btn btn-ar btn-blue" href="anti-racists">Find more anti-racists</a>
+         <a class="btn btn-ar btn-blue" href="people">Find more anti-racists</a>
         <a class="btn btn-ar btn-blue" href="contribute-anti-racists">Add an anti-racist</a>
     </div>
     <div class="row justify-content-center funding" id="funding">
