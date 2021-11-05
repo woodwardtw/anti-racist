@@ -29,7 +29,7 @@ defined( 'ABSPATH' ) || exit;
 		<div class="col-md-7">
 			<?php the_field('short_biography');?>			
 		</div>
-		<div class="person-links col-md-12 d-flex justify-content-center">
+		<div class="person-links col-md-12 d-flex justify-content-around">
 			<?php 
 				echo ar_person_links('twitter');
 				echo ar_person_links('personal_site');

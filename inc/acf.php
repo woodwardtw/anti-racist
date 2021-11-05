@@ -52,13 +52,14 @@ function ar_go_to_link(){
 //for people to get the links
 
 function ar_person_links($field){
+    $person = get_the_title();
     if(get_field($field)){
         $all = get_field_object($field);
         $label = $all['label'];
         $url = $all['value'];
         $class = $all['name'];
         //var_dump($name);
-        return "<a class='person-link {$class}' href='{$url}'>{$label}</a>";
+        return "<a class='person-link {$class} btn btn-ar' href='{$url}' aria-label='{$person} on {$label}.'>{$label}</a>";
     }
 }
 
