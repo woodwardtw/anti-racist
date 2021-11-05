@@ -103,6 +103,22 @@
             },
             "default_value": "",
             "placeholder": ""
+        },
+        {
+            "key": "field_61853c972c544",
+            "label": "Facebook",
+            "name": "facebook",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
         }
     ],
     "location": [
@@ -136,5 +152,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1636119857
+    "modified": 1636121764
 }

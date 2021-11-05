@@ -32,9 +32,10 @@ defined( 'ABSPATH' ) || exit;
 		<div class="person-links col-md-12 d-flex justify-content-around">
 			<?php 
 				echo ar_person_links('twitter');
-				echo ar_person_links('personal_site');
-				echo ar_person_links('tiktok');
+				echo ar_person_links('personal_site');				
 				echo ar_person_links('instagram');
+				echo ar_person_links('facebook');
+				echo ar_person_links('tiktok');
 			?>
 		</div>
 	</div>

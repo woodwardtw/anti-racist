@@ -116,12 +116,12 @@ function ar_home_people(){
             $title = get_the_title();
             $color = ar_color_picker($count);
             $img = get_the_post_thumbnail_url();
-            //$url = get_permalink(); // change to this when people single post is more robust
-            $url = ar_return_first_person_link();
+            $url = get_permalink(); // change to this when people single post is more robust
+            //$url = ar_return_first_person_link();
             //$description = get_content; //if we want to show more content at some point
             $html .=  "<div class='col-md-3'>
-                                    <div class='{$color}'>
-                <img class='twit' src='{$img}' alt='Profile image for {$title}.'>
+                                    <a href='{$url}'><div class='{$color}'>
+                <img class='twit' src='{$img}' alt='Profile image for {$title}.'></a>
             </div>
             <a href='{$url}'>{$title}</a></li>
         </div>
