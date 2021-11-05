@@ -30,6 +30,7 @@ defined( 'ABSPATH' ) || exit;
 
 		<?php
 		the_field('summary');
+		echo ar_go_to_link();
 		the_content();
 		understrap_link_pages();
 		?>

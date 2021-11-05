@@ -2,7 +2,7 @@
 /**
  * Template Name: Submit Person
  *
- * Template for displaying a page without sidebar even if a sidebar widget is published.
+ * Template for submitting an antiracist to the site
  *
  * @package Understrap
  */

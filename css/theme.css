@@ -16103,7 +16103,7 @@ h4,
   padding-top: 30px;
 }
 
-.title a {
+.title a, a h1 {
   color: #000;
 }
 

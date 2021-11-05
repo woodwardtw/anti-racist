@@ -55,7 +55,7 @@
             "add_term": 1,
             "save_terms": 1,
             "load_terms": 1,
-            "return_format": "id",
+            "return_format": "object",
             "multiple": 0,
             "allow_null": 0
         },
@@ -64,7 +64,7 @@
             "label": "Estimated Time to Read\/Watch\/Listen",
             "name": "eta",
             "type": "number",
-            "instructions": "Indicate your best guess in minutes",
+            "instructions": "When it is appropriate, indicate how long it'd take to watch\/read\/listen to this resource in minutes.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -113,5 +113,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1636115839
+    "modified": 1636116949
 }
