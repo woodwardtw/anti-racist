@@ -25,7 +25,7 @@
             "key": "field_61841cdff8fb7",
             "label": "Short Biography",
             "name": "short_biography",
-            "type": "textarea",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -35,10 +35,10 @@
                 "id": ""
             },
             "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": 4,
-            "new_lines": ""
+            "tabs": "visual",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
         },
         {
             "key": "field_6184255d7e646",
@@ -136,5 +136,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1636051272
+    "modified": 1636119857
 }
