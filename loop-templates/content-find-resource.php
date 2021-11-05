@@ -36,7 +36,7 @@ defined( 'ABSPATH' ) || exit;
  -->					<?php //echo facetwp_display( 'facet', 'resource_length');?>	
 				</div>
 			</div>
-			<div class="col-md-9">
+			<div class="col-md-9" id="facet-resources">
 				 <?php echo facetwp_display( 'template', 'resources');?>	
 			</div>
 			<div class="col-md-12">

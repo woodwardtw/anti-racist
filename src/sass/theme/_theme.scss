@@ -309,6 +309,19 @@ img {
 	color: $black;
 }
 
+/*facet resources*/
+#facet-resources .col-md-6 {
+	margin-bottom: 20px;
+}
+
+#facet-resources .card {
+	border-radius: 0;
+}
+
+#facet-resources a{
+	color: $black;
+}
+
 /*TEMPORARY*/
 .understrap-read-more-link {
 	display: none;
