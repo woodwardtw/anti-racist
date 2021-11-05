@@ -16387,6 +16387,14 @@ img {
   color: #556E4E;
 }
 
+/*PERSON*/
+.person-link {
+  width: 200px;
+  margin-top: 30px;
+  font-size: 1.5em;
+  color: #000;
+}
+
 /*TEMPORARY*/
 .understrap-read-more-link {
   display: none;

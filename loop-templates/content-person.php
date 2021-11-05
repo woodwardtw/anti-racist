@@ -22,13 +22,26 @@ defined( 'ABSPATH' ) || exit;
 		</div><!-- .entry-meta -->
 
 	</header><!-- .entry-header -->
-
-	<?php echo get_the_post_thumbnail( $post->ID, 'medium' ); ?>
-
+	<div class="row">
+		<div class='green col-md-5'>
+			<?php echo get_the_post_thumbnail( $post->ID, 'medium', 'single-person-img' ); ?>
+		</div>
+		<div class="col-md-7">
+			<?php the_field('short_biography');?>			
+		</div>
+		<div class="person-links col-md-12 d-flex justify-content-center">
+			<?php 
+				echo ar_person_links('twitter');
+				echo ar_person_links('personal_site');
+				echo ar_person_links('tiktok');
+				echo ar_person_links('instagram');
+			?>
+		</div>
+	</div>
 	<div class="entry-content">
 
 		<?php
-		the_content();
+		//the_content();
 		understrap_link_pages();
 		?>
 

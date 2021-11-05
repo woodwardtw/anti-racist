@@ -284,7 +284,7 @@ img {
 
 #people a {
 				font-weight: 700;
-				color: #000;
+				color: $black;
 				text-align: center;
 				display: block;
 				font-size: 1.3em;
@@ -299,6 +299,14 @@ img {
 
 .news a h2 {
 	color: $green;
+}
+
+/*PERSON*/
+.person-link {
+	width: 200px;
+	margin-top: 30px;
+	font-size: 1.5em;
+	color: $black;
 }
 
 /*TEMPORARY*/
