@@ -128,9 +128,9 @@ function ar_home_people(){
             ";
         endwhile;       
     endif;
-    return $html;
     // Reset Post Data
     wp_reset_postdata();
+    return $html;
 }
 
 //for picking the color of the photo wash in the people loop on the home page

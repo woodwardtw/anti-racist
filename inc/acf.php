@@ -12,10 +12,8 @@ defined( 'ABSPATH' ) || exit;
 function ar_funding_opps(){
     $html = '';
     if( have_rows('funding_opportunities') ):
-
         // Loop through rows.
         while( have_rows('funding_opportunities') ) : the_row();
-
             // Load sub field value.
             $title = get_sub_field('funding_title');
             $text = get_sub_field('funding_description');
