@@ -177,12 +177,24 @@ a .event-title {
 				
 				font-family: 'Kanit', sans-serif;
 				font-size: 4vw;			
-				text-align: center;
+				margin-left: 37px;
+}
+
+.media-list ul {
+	list-style: none;
 }
 
 .media-list ul li {
 				line-height: 1.4em;
 }
+
+.media-list ul li p {
+	max-height: 70px;
+	width: 100%;
+	text-overflow: ellipsis;
+	display: inline-block;
+}
+
 
 .media-list li {
 				margin-bottom: 15px;
@@ -192,7 +204,22 @@ ul li a {
 				font-weight: 700;
 				color: #000;
 				font-size: 1.5em;
+				margin-bottom: 7px;
+				text-decoration: underline;				
 }
+
+.read ul li a {
+	  text-decoration-color: $red;
+}
+
+.watch ul li a {
+	  text-decoration-color: $green;
+}
+
+.listen ul li a {
+	  text-decoration-color: $blue;
+}
+
 
 .nav {
 				background-color: #D15252;
@@ -279,7 +306,7 @@ img {
 				background-image: url(../imgs/right_arrow.svg);
 				background-position: right center;
 				background-repeat: no-repeat;
-				background-size: contain;
+				background-size: 30px;
 }
 
 .btn-blue {

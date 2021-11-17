@@ -16258,11 +16258,22 @@ a .event-title {
 .media-type {
   font-family: "Kanit", sans-serif;
   font-size: 4vw;
-  text-align: center;
+  margin-left: 37px;
+}
+
+.media-list ul {
+  list-style: none;
 }
 
 .media-list ul li {
   line-height: 1.4em;
+}
+
+.media-list ul li p {
+  max-height: 70px;
+  width: 100%;
+  text-overflow: ellipsis;
+  display: inline-block;
 }
 
 .media-list li {
@@ -16273,6 +16284,23 @@ ul li a {
   font-weight: 700;
   color: #000;
   font-size: 1.5em;
+  margin-bottom: 7px;
+  text-decoration: underline;
+}
+
+.read ul li a {
+  -webkit-text-decoration-color: #D15252;
+  text-decoration-color: #D15252;
+}
+
+.watch ul li a {
+  -webkit-text-decoration-color: #556E4E;
+  text-decoration-color: #556E4E;
+}
+
+.listen ul li a {
+  -webkit-text-decoration-color: #95B1C1;
+  text-decoration-color: #95B1C1;
 }
 
 .nav {
@@ -16359,7 +16387,7 @@ img {
   background-image: url(../imgs/right_arrow.svg);
   background-position: right center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 30px;
 }
 
 .btn-blue {
