@@ -57,7 +57,7 @@ function ar_person_links($field){
         $url = $all['value'];
         $class = $all['name'];
         //var_dump($name);
-        return "<div class='col-md-3'><a class='person-link {$class} btn' href='{$url}' aria-label='{$person} on {$label}.'>{$label}</a></div>";
+        return "<div class='col-md-3'><a class='{$class} btn btn-ar btn-blue' href='{$url}' aria-label='{$person} on {$label}.'>{$label}</a></div>";
     }
 }
 
