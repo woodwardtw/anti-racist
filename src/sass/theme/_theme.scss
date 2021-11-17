@@ -332,10 +332,22 @@ img {
 	display: none;
 }
 
-.tribe-events .tribe-events-calendar-month__multiday-event-bar {
-	background-color: $blue;
+.tribe-events .tribe-events-calendar-month__multiday-event-bar, .tribe-events .tribe-events-calendar-month__multiday-event-bar-inner {
+	background-color: $red;
 }
 
+.tribe-events .tribe-events-c-ical__link, .tribe-events .tribe-events-c-ical__link:visited {
+	border: 1px solid $green;
+	color: $green;
+}
+
+.tribe-common .tribe-common-c-svgicon {
+	color: $green;
+}
+
+.tribe-events .tribe-events-c-ical__link:active, .tribe-events .tribe-events-c-ical__link:focus, .tribe-events .tribe-events-c-ical__link:hover{
+	background-color: $green;
+}
 
 @media only screen and (max-width: 800px) {
 
