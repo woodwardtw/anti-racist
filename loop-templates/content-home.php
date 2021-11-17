@@ -70,7 +70,7 @@ defined( 'ABSPATH' ) || exit;
     <!--end media/resources-->
     <div class="row" id="people">
     	 <div class="col-md-12">
-            <div class="label">ANTI-RACISTS</div>
+            <div class="label">CONNECTIONS</div>
         </div>
         <?php echo ar_home_people();?>
         <a class="btn btn-ar btn-blue" href="people">See more connections</a>
@@ -88,7 +88,7 @@ defined( 'ABSPATH' ) || exit;
     <!--news-->
     <div class="row stories" id="news">
         <div class="col-md-12">
-            <div class="label">News</div>
+            <div class="label">Updates</div>
         </div>
             <?php echo ar_home_news();?>
   
