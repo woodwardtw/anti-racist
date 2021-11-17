@@ -98,11 +98,14 @@ function ar_events_content_titler( $content ) {
 
     		$html = '';
     		if(isset($info)){
-    			$html = "<a class='btn btn-ar' href='{$info}'>More information</a>";
+    			$html = "<a class='btn btn-ar btn-blue' href='{$info}'>More information</a>";
     		}
     		if(isset($reg)){
-    			$html .= "<a class='btn btn-ar' href='{$reg}'>Register</a>";
+    			$html .= "<a class='btn btn-ar btn-blue' href='{$reg}'>Register</a>";
     		}
+        if (isset($reg) || isset($info)){
+          $html = "<div class='event-link-block d-flex justify-content-around'>{$html}</div>";
+        }
         return $content . $html;
     }
     return $content;

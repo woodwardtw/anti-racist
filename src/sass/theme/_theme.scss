@@ -265,7 +265,7 @@ img {
 				border-color: $blue;
 }
 
-.btn-ar {
+.btn-ar, .tribe-events-content a.btn-ar {
 				display: block;
 				width: 300px;
 				margin: 60px auto;
@@ -294,7 +294,8 @@ img {
 #events .btn-blue:hover,
 #events .btn-blue:hover a,
 #people .btn-blue:hover,
-#people .btn-blue:hover a {
+#people .btn-blue:hover a,
+.tribe-events-content a.btn-blue:hover {
 				background-color: $green;
 				color: $white;
 }
