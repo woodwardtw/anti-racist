@@ -35,10 +35,12 @@ defined( 'ABSPATH' ) || exit;
         </div>
 
     <!--end events-->
-    <div class="row media" id="resources">
+    <div class="row media h-100" id="resources">
         <div class="col-md-12">
             <div class="label">DIY LEARNING</div>
         </div>
+    </div>
+    <div class="row h-100">
         <div class="col-md-4">
             <div class="media-box read">
                 <div class="media-type">READ</div>

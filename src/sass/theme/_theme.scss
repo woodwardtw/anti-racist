@@ -169,19 +169,15 @@ a .event-title {
 }
 
 .media-box {
-				display: flex;
 				border-left: 10px solid;
+				height: 100%;
 }
 
 .media-type {
-				writing-mode: vertical-rl;
-				text-orientation: upright;
+				
 				font-family: 'Kanit', sans-serif;
-				font-size: 4vw;
-				letter-spacing: -40px;
-				/*   padding-bottom: 50px; */
+				font-size: 4vw;			
 				text-align: center;
-				height: 400px;
 }
 
 .media-list ul li {
