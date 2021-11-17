@@ -17,6 +17,7 @@ defined( 'ABSPATH' ) || exit;
                 <div class="green">
                 	<?php echo get_the_post_thumbnail(get_the_ID(),'large');?>
                 </div>
+                <div class="caption"><?php echo the_post_thumbnail_caption(get_the_ID());?></div>
             </div>
             <div class="col-md-6">
                 <?php the_content();?>
@@ -28,7 +29,7 @@ defined( 'ABSPATH' ) || exit;
             </div>
             <?php echo ar_show_four_events();?>  
             <div class="col-md-12">
-                <a class="btn btn-ar btn-blue" href="events">Find more events</a>
+                <a class="btn btn-ar btn-blue" href="events">See all events</a>
                 <a class="btn btn-ar btn-blue" href="add-event">Add an event</a> 
             </div>       
         </div>
@@ -38,9 +39,6 @@ defined( 'ABSPATH' ) || exit;
         <div class="col-md-12">
             <div class="label">DIY LEARNING</div>
         </div>
-        <!-- <div class="col-md-6 offset-md-3">
-            <h3><a href="https://middlebury.libguides.com/antiracism">Middlebury Libraries Anti-Racism Reading Guide</a></h3><p>This anti-racism reading guide promotes works and materials that address topics of race, identity, and experience for all members of the Middlebury community, and to support members of our community in learning and thinking deeply about these ideas. The theme that connects all of these works is the exploration of our differences and commonalities. What is it like to live in a community where you sometimes feel as if you’re on the outside looking in? How does an indivi</p>
-        </div>        --> 
         <div class="col-md-4">
             <div class="media-box read">
                 <div class="media-type">READ</div>
@@ -75,8 +73,9 @@ defined( 'ABSPATH' ) || exit;
             <div class="label">ANTI-RACISTS</div>
         </div>
         <?php echo ar_home_people();?>
-         <a class="btn btn-ar btn-blue" href="people">Find more anti-racists</a>
-        <a class="btn btn-ar btn-blue" href="contribute-anti-racists">Add an anti-racist</a>
+        <a class="btn btn-ar btn-blue" href="people">See more connections</a>
+        <a class="btn btn-ar btn-blue" href="contribute-anti-racists">Add a connection</a>
+
     </div>
     <div class="row justify-content-center funding" id="funding">
         <div class="col-md-12">

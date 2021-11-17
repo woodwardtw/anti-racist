@@ -16408,9 +16408,18 @@ img {
   color: #000;
 }
 
+/*calendar adjustments*/
+.tribe-common--breakpoint-medium.tribe-events .tribe-common-c-btn.tribe-events-c-search__button {
+  background-color: #556E4E;
+}
+
 /*TEMPORARY*/
 .understrap-read-more-link {
   display: none;
+}
+
+.tribe-events .tribe-events-calendar-month__multiday-event-bar {
+  background-color: #95B1C1;
 }
 
 @media only screen and (max-width: 800px) {

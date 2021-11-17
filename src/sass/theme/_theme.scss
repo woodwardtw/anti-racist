@@ -322,9 +322,18 @@ img {
 	color: $black;
 }
 
+/*calendar adjustments*/
+.tribe-common--breakpoint-medium.tribe-events .tribe-common-c-btn.tribe-events-c-search__button {
+	background-color: $green;
+}
+
 /*TEMPORARY*/
 .understrap-read-more-link {
 	display: none;
+}
+
+.tribe-events .tribe-events-calendar-month__multiday-event-bar {
+	background-color: $blue;
 }
 
 
