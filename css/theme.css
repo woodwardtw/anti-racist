@@ -16439,6 +16439,12 @@ img {
   color: #000;
 }
 
+.nav-previous a, .nav-next a {
+  color: #000;
+  margin: 20px 0;
+  display: inline-block;
+}
+
 /*facet resources*/
 #facet-resources .col-md-6 {
   margin-bottom: 20px;
@@ -16467,7 +16473,7 @@ img {
   background-color: #D15252;
 }
 
-.tribe-events .tribe-events-c-ical__link,
+.tribe-events-c-ical__link, .tribe-events .tribe-events-c-ical__link,
 .tribe-events .tribe-events-c-ical__link:visited {
   border: 1px solid #556E4E;
   color: #556E4E;
