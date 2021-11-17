@@ -95,6 +95,11 @@ defined( 'ABSPATH' ) || exit;
             <div class="label">Updates</div>
         </div>
             <?php echo ar_home_news();?>
+
+        <div class="col-md-12 d-flex justify-content-around">
+            <a class="btn btn-ar btn-blue" href="updates">See more updates</a>
+            <a class="btn btn-ar btn-blue" href="contribute-update/">Add an update</a>
+        </div>
   
     </div>
     <!--end news-->

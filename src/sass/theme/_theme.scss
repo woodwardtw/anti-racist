@@ -385,6 +385,12 @@ img {
 				color: $green;
 }
 
+/*footer*/
+#wrapper-footer-full, #wrapper-footer {
+	background-color: $green;
+	color: $white;
+}
+
 @media only screen and (max-width: 800px) {
 
 				.label {

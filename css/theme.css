@@ -16469,6 +16469,12 @@ img {
   color: #556E4E;
 }
 
+/*footer*/
+#wrapper-footer-full, #wrapper-footer {
+  background-color: #556E4E;
+  color: #fff;
+}
+
 @media only screen and (max-width: 800px) {
   .label {
     font-family: "Kanit", sans-serif;
