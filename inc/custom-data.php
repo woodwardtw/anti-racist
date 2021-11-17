@@ -106,7 +106,7 @@ function create_type_taxonomies()
     'query_var' => true,
     'rewrite' => array( 'slug' => 'type' ),
     'show_in_rest'          => true,
-    'rest_base'             => 'type',
+    'rest_base'             => 'resource_type',
     'rest_controller_class' => 'WP_REST_Terms_Controller',
     'show_in_nav_menus' => false,    
   ));

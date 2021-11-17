@@ -16435,6 +16435,14 @@ img {
   background-color: #556E4E;
 }
 
+.tribe-events-event-meta a, .tribe-events-event-meta a {
+  text-decoration: underline;
+}
+
+.tribe-events-event-meta a:focus, .tribe-events-event-meta a:hover {
+  color: #556E4E;
+}
+
 @media only screen and (max-width: 800px) {
   .label {
     font-family: "Kanit", sans-serif;

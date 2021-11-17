@@ -349,6 +349,14 @@ img {
 	background-color: $green;
 }
 
+.tribe-events-event-meta a, .tribe-events-event-meta a{
+	text-decoration: underline;
+}
+
+.tribe-events-event-meta a:focus, .tribe-events-event-meta a:hover {
+	color: $green; 
+}
+
 @media only screen and (max-width: 800px) {
 
 				.label {
