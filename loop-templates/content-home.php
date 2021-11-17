@@ -75,7 +75,7 @@ defined( 'ABSPATH' ) || exit;
             <div class="label">CONNECTIONS</div>
         </div>
         <?php echo ar_home_people();?>
-        <div class="col-md-12 d-flex justify-content-around">
+        <div class="col-md-12 d-flex justify-content-around connection-buttons">
             <a class="btn btn-ar btn-blue" href="people">Find more connections</a>
             <a class="btn btn-ar btn-blue" href="contribute-anti-racists">Add a connection</a>
         </div>
@@ -98,7 +98,7 @@ defined( 'ABSPATH' ) || exit;
 
         <div class="col-md-12 d-flex justify-content-around">
             <a class="btn btn-ar btn-blue" href="updates">See more updates</a>
-            <a class="btn btn-ar btn-blue" href="contribute-update/">Add an update</a>
+            <a class="btn btn-ar btn-blue" href="contribute-updates/">Add an update</a>
         </div>
   
     </div>
