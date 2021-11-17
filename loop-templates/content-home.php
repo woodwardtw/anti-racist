@@ -28,8 +28,8 @@ defined( 'ABSPATH' ) || exit;
                 <div class="label">SHOW UP</div>
             </div>
             <?php echo ar_show_four_events();?>  
-            <div class="col-md-12">
-                <a class="btn btn-ar btn-blue" href="events">See all events</a>
+            <div class="col-md-12 d-flex justify-content-around">
+                <a class="btn btn-ar btn-blue" href="events">Find more events</a>
                 <a class="btn btn-ar btn-blue" href="add-event">Add an event</a> 
             </div>       
         </div>
@@ -64,8 +64,10 @@ defined( 'ABSPATH' ) || exit;
                 </div>
             </div>
         </div>
-        <a class="btn btn-ar btn-blue" href="diy-learning">Find more resources</a>
-        <a class="btn btn-ar btn-blue" href="contribute-resource/">Add a resource</a>
+        <div class="col-md-12 d-flex justify-content-around">
+            <a class="btn btn-ar btn-blue" href="diy-learning">Find more resources</a>
+            <a class="btn btn-ar btn-blue" href="contribute-resource/">Add a resource</a>
+        </div>
     </div>
     <!--end media/resources-->
     <div class="row" id="people">
@@ -73,8 +75,10 @@ defined( 'ABSPATH' ) || exit;
             <div class="label">CONNECTIONS</div>
         </div>
         <?php echo ar_home_people();?>
-        <a class="btn btn-ar btn-blue" href="people">See more connections</a>
-        <a class="btn btn-ar btn-blue" href="contribute-anti-racists">Add a connection</a>
+        <div class="col-md-12 d-flex justify-content-around">
+            <a class="btn btn-ar btn-blue" href="people">Find more connections</a>
+            <a class="btn btn-ar btn-blue" href="contribute-anti-racists">Add a connection</a>
+        </div>
 
     </div>
     <div class="row justify-content-center funding" id="funding">

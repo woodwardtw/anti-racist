@@ -16103,7 +16103,8 @@ h4,
   padding-top: 30px;
 }
 
-.title a, a h1 {
+.title a,
+a h1 {
   color: #000;
 }
 
@@ -16353,16 +16354,35 @@ img {
 
 .btn-ar {
   display: block;
-  width: 270px;
+  width: 300px;
   margin: 60px auto;
   border: 4px solid black;
   border-radius: 0;
   font-size: 1.2em;
   font-weight: 700;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.btn-ar:hover {
+  background-image: url(../imgs/right_arrow.svg);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .btn-blue {
   background-color: #95B1C1;
+}
+
+.btn-blue:hover,
+.btn-blue:hover a,
+#events .btn-blue:hover,
+#events .btn-blue:hover a,
+#people .btn-blue:hover,
+#people .btn-blue:hover a {
+  background-color: #556E4E;
+  color: #fff;
 }
 
 .label {
@@ -16418,11 +16438,13 @@ img {
   display: none;
 }
 
-.tribe-events .tribe-events-calendar-month__multiday-event-bar, .tribe-events .tribe-events-calendar-month__multiday-event-bar-inner {
+.tribe-events .tribe-events-calendar-month__multiday-event-bar,
+.tribe-events .tribe-events-calendar-month__multiday-event-bar-inner {
   background-color: #D15252;
 }
 
-.tribe-events .tribe-events-c-ical__link, .tribe-events .tribe-events-c-ical__link:visited {
+.tribe-events .tribe-events-c-ical__link,
+.tribe-events .tribe-events-c-ical__link:visited {
   border: 1px solid #556E4E;
   color: #556E4E;
 }
@@ -16431,15 +16453,19 @@ img {
   color: #556E4E;
 }
 
-.tribe-events .tribe-events-c-ical__link:active, .tribe-events .tribe-events-c-ical__link:focus, .tribe-events .tribe-events-c-ical__link:hover {
+.tribe-events .tribe-events-c-ical__link:active,
+.tribe-events .tribe-events-c-ical__link:focus,
+.tribe-events .tribe-events-c-ical__link:hover {
   background-color: #556E4E;
 }
 
-.tribe-events-event-meta a, .tribe-events-event-meta a {
+.tribe-events-event-meta a,
+.tribe-events-event-meta a {
   text-decoration: underline;
 }
 
-.tribe-events-event-meta a:focus, .tribe-events-event-meta a:hover {
+.tribe-events-event-meta a:focus,
+.tribe-events-event-meta a:hover {
   color: #556E4E;
 }
 
