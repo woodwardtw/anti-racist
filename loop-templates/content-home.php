@@ -74,7 +74,7 @@ defined( 'ABSPATH' ) || exit;
     <!--end media/resources-->
     <div class="row" id="people">
     	 <div class="col-md-12">
-            <div class="label">CONNECTIONS</div>
+            <div class="label">CONNECT</div>
         </div>
         <?php echo ar_home_people();?>
         <div class="col-md-12 d-flex justify-content-around connection-buttons">

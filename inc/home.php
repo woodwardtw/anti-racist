@@ -7,6 +7,8 @@
  * @package Understrap
  */
 
+add_filter('acf/settings/remove_wp_meta_box', '__return_false');
+add_filter( 'is_protected_meta', '__return_false' ); 
 
 //home page events loop
 function ar_show_four_events(){
@@ -14,6 +16,12 @@ function ar_show_four_events(){
     $events = tribe_get_events( [ 
             'posts_per_page' => 4, 
             'start_date' => 'now',
+            'orderby'   => 'order_clause',//shouldn't have to do this but I do for some reason
+            'meta_query' => array(
+                'order_clause' => array(
+                        'key' => '_EventStartDate',
+                        'type' => 'date' // unless the field is not a number
+            ))
         ]
     );
  
