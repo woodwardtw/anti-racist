@@ -26,17 +26,17 @@ defined( 'ABSPATH' ) || exit;
 				//THE FORM
 				the_content();
 					$args = array(
-					'id' => 'new-resource',
+					'id' => 'new-event',
 					'fields' => array('link','summary','type'),
 			        'post_id'       => 'new_post',
 			        'post_title'   => true,
 					'post_content'	=> false,
 					'html_updated_message'  => '<div id="message" class="updated"><p>Thank you for contributing!</p></div>',
 			        'new_post'      => array(
-			            'post_type'     => 'resource',
+			            'post_type'     => 'event',
 			            // 'tags_input' => array($type),
 			        ),
-			        'submit_value'  => 'Add your resource.',
+			        'submit_value'  => 'Add your event.',
 				);
 				acf_form($args); 
 				?>
