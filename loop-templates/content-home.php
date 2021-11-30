@@ -29,7 +29,7 @@ defined( 'ABSPATH' ) || exit;
             </div>
             <?php echo ar_show_four_events();?>  
             <div class="col-md-12 d-flex justify-content-around">
-                <a class="btn btn-ar btn-blue" href="events">Find more events</a>
+                <a class="btn btn-ar btn-blue" href="live-events">Find more events</a>
                 <a class="btn btn-ar btn-blue" href="add-event">Add an event</a> 
             </div>       
         </div>
