@@ -16095,7 +16095,7 @@ h4,
 .anti,
 .racism,
 .tribe-events-single-event-title {
-  font-family: "Kanit", sans-serif;
+  font-family: "VTC Martin", "Kanit", sans-serif;
 }
 
 .title {
@@ -16122,13 +16122,13 @@ a h1 {
 }
 
 .anti {
-  font-size: 9.3vw;
+  font-size: 15.3vw;
   line-height: 0.5;
   display: block;
 }
 
 .racism {
-  font-size: 6vw;
+  font-size: 9.5vw;
   line-height: 1;
   display: block;
 }
@@ -16168,9 +16168,9 @@ a h1 {
 }
 
 .quote-source {
-  font-size: 2em;
+  font-size: 4em;
   line-height: 1.1;
-  font-family: "Kanit", sans-serif;
+  font-family: "VTC Martin", "Kanit", sans-serif;
   margin-top: 15px;
   color: #556E4E;
 }
@@ -16182,8 +16182,8 @@ a h1 {
 }
 
 .label {
-  font-family: "Kanit", sans-serif;
-  font-size: 6vw;
+  font-family: "VTC Martin", "Kanit", sans-serif;
+  font-size: 10vw;
   text-align: right;
   margin: 120px 40px 40px 40px;
   position: relative;
@@ -16236,7 +16236,7 @@ a .month {
 }
 
 a .day {
-  font-family: "Kanit", sans-serif;
+  font-family: "VTC Martin", "Kanit", sans-serif;
   font-size: 9vw;
   line-height: 0.8;
 }
@@ -16256,7 +16256,7 @@ a .event-title {
 }
 
 .media-type {
-  font-family: "Kanit", sans-serif;
+  font-family: "VTC Martin", "Kanit", sans-serif;
   font-size: 4vw;
   margin-left: 37px;
 }
@@ -16506,8 +16506,20 @@ img {
 }
 
 @media only screen and (max-width: 800px) {
+  .anti {
+    font-size: 20vw;
+    line-height: 1;
+    display: inline-block;
+  }
+
+  .racism {
+    font-size: 20vw;
+    line-height: 1;
+    display: inline-block;
+  }
+
   .label {
-    font-family: "Kanit", sans-serif;
+    font-family: "VTC Martin", "Kanit", sans-serif;
     font-size: 10vw;
     text-align: right;
     margin: 120px 40px 40px 40px;

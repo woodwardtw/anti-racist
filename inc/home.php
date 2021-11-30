@@ -20,7 +20,7 @@ function ar_show_four_events(){
             'meta_query' => array(
                 'order_clause' => array(
                         'key' => '_EventStartDate',
-                        'type' => 'date' // unless the field is not a number
+                        'type' => 'date'
             ))
         ]
     );
