@@ -50,7 +50,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     <div class="modal-content">
       
 		<!-- Begin Mailchimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+<!-- <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> -->
 <style type="text/css">
                 #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
                 /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
@@ -59,7 +59,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div id="mc_embed_signup">
 <form action="https://middlebury.us5.list-manage.com/subscribe/post?u=0d55835ef38be4e02b8a2e9d2&;id=d0ad533d75" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
-                <h2>Subscribe</h2>
+                <h2>Get email updates!</h2>
+                <?php the_field('newsletter_intro', 'option');?>
 <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
 <div class="mc-field-group">
                 <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
@@ -75,7 +76,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                                 <div class="response" id="mce-success-response" style="display:none"></div>
                 </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0d55835ef38be4e02b8a2e9d2_d0ad533d75" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    <div class="clear"><input type="submit" value="Subscribe" class="btn btn-ar btn-blue" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
     </div>
 </form>
 </div>

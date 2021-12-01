@@ -141,3 +141,9 @@ function ar_acf_save_people_title( $post_id ) {
   
 }
 add_action( 'acf/save_post', 'ar_acf_save_people_title', 10, 1 );
+
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page();
+	
+}

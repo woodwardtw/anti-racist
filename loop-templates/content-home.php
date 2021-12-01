@@ -87,7 +87,12 @@ defined( 'ABSPATH' ) || exit;
         <div class="col-md-12">
             <div class="label">Funding</div>
         </div>
-        <?php echo ar_funding_opps();?>
+        <div class="col-md-6">
+            <?php the_field('funding_introduction')?>
+        </div>
+        <div class="col-md-6">
+            <?php echo ar_funding_opps();?>
+        </div>
            
     </div>
     <!--end funding-->

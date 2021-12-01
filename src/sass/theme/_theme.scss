@@ -26,6 +26,11 @@ h4,
 				padding-top: 30px;
 }
 
+a {
+	color: #000;
+	text-decoration: underline;
+}
+
 .title a,
 a h1 {
 				color: #000;
@@ -302,7 +307,7 @@ img {
 	font-weight: 100;
 }
 
-.btn-ar, .tribe-events-content a.btn-ar {
+.btn-ar, .tribe-events-content a.btn-ar, #mc-embedded-subscribe {
 				display: block;
 				width: 300px;
 				margin: 60px auto;
@@ -310,11 +315,11 @@ img {
 				border-radius: 0;
 				font-size: 1.2em;
 				font-weight: 700;
-
+				text-decoration: none;
 				transition: all ease .3s;
 }
 
-.btn-ar:hover {
+.btn-ar:hover, #mc-embedded-subscribe:hover {
 				// padding-left: 20px;
 				background-image: url(../imgs/right_arrow.svg);
 				background-position: right center;
@@ -431,6 +436,18 @@ img {
 .tribe-events-event-meta a:focus,
 .tribe-events-event-meta a:hover {
 				color: $green;
+}
+
+
+/*modal newsletter subscribe*/
+#mc_embed_signup_scroll {
+	padding: 30px;
+}
+
+#mc_embed_signup h2 {
+	font-size: 4.4em;
+    font-weight: 100;
+	text-align: center;
 }
 
 /*footer*/

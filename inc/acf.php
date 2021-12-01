@@ -18,12 +18,11 @@ function ar_funding_opps(){
             $title = get_sub_field('funding_title');
             $text = get_sub_field('funding_description');
             $link = get_sub_field('funding_link');
+            $audience = explode(' ', $title)[0];
             // Do something...
-            $html .= "<div class='col-md-4'>
+            $html .= "<div class='funding-opp'>
                          <div class='funding-details'>
-                            <h2>{$title}</h2>
-                            {$text}
-                            <a class='btn btn-ar btn-blue' href='{$link}' aria-label='Learn more about {$title}.'>Apply</a>
+                            <a class='btn btn-ar btn-blue' href='{$link}' aria-label='Apply for {$title} funding.'>{$audience} Application</a>
                         </div>
                     </div>";
         // End loop.
