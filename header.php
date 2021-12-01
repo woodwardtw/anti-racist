@@ -39,6 +39,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <h1>
                             <span class="anti">ANTI</span>
                             <span class="racism">RACISM</span>
+                            <!-- <span class="midd">@Middlebury</span> -->
                         </h1>
                     </a>
                 </div>
