@@ -179,3 +179,41 @@ function create_people_cpt() {
   $wp_rewrite->flush_rules();
 }
 add_action( 'init', 'create_people_cpt', 0 );
+
+add_action( 'init', 'ar_group_register_tax_orgs', 0 );
+/**
+ * Register Taxonomy Organization
+ */
+function ar_group_register_tax_orgs() {
+
+  $labels = array(
+    'name'          => __( 'Organization', 'textdomain' ),
+    'singular_name' => __( 'Organization', 'textdomain' ),
+    'search_items'  => __( 'Search Organization', 'textdomain' ),
+    'all_items'     => __( 'All Organization', 'textdomain' ),
+    'edit_item'     => __( 'Edit Organization', 'textdomain' ),
+    'update_item'   => __( 'Update Organization', 'textdomain' ),
+    'add_new_item'  => __( 'Add New Organization', 'textdomain' ),
+    'new_item_name' => __( 'Add New Organization', 'textdomain' ),
+  );
+
+  register_taxonomy(
+    'orgs',
+    array(
+      'people',
+    ),
+    array(
+      'hierarchical'       => true,
+      'public'             => true,
+      'publicly_queryable' => true,
+      'labels'             => $labels,
+      'show_ui'            => true,
+      'show_in_rest'       => true,
+      'show_admin_column'  => true,
+      'query_var'          => true,
+      'rewrite'            => array(
+        'slug' => _x( 'orgs', 'slug', 'textdomain' ),
+      ),
+    )
+  );
+}

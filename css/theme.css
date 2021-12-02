@@ -16337,7 +16337,7 @@ ul li a {
   text-decoration: none;
 }
 
-#funding h2 {
+.home-intro h2, #funding h2 {
   font-size: 4em;
 }
 

@@ -19,7 +19,7 @@ defined( 'ABSPATH' ) || exit;
                 </div>
                 <div class="caption"><?php echo the_post_thumbnail_caption(get_the_ID());?></div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 home-intro">
                 <?php the_content();?>
             </div>
         </div>

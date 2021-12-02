@@ -1,6 +1,6 @@
 {
     "key": "group_617fe3664081c",
-    "title": "People",
+    "title": "People\/Groups",
     "fields": [
         {
             "key": "field_61841cd74117c",
@@ -23,7 +23,7 @@
         },
         {
             "key": "field_61841cdff8fb7",
-            "label": "Short Biography",
+            "label": "Short Description",
             "name": "short_biography",
             "type": "wysiwyg",
             "instructions": "",
@@ -41,9 +41,63 @@
             "delay": 0
         },
         {
-            "key": "field_6184255d7e646",
-            "label": "Twitter",
-            "name": "twitter",
+            "key": "field_61a8de4f52301",
+            "label": "Type",
+            "name": "type",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Person": "Person",
+                "Organization": "Organization"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_61a8de8a01f77",
+            "label": "Group Type",
+            "name": "group_type",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61a8de4f52301",
+                        "operator": "==",
+                        "value": "Organization"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "orgs",
+            "field_type": "checkbox",
+            "add_term": 1,
+            "save_terms": 1,
+            "load_terms": 1,
+            "return_format": "id",
+            "multiple": 0,
+            "allow_null": 0
+        },
+        {
+            "key": "field_6184256d7e647",
+            "label": "Site URL",
+            "name": "personal_site",
             "type": "url",
             "instructions": "",
             "required": 0,
@@ -57,9 +111,9 @@
             "placeholder": ""
         },
         {
-            "key": "field_6184256d7e647",
-            "label": "Personal site",
-            "name": "personal_site",
+            "key": "field_6184255d7e646",
+            "label": "Twitter",
+            "name": "twitter",
             "type": "url",
             "instructions": "",
             "required": 0,
@@ -152,5 +206,6 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1636121764
+    "show_in_rest": 0,
+    "modified": 1638457613
 }
