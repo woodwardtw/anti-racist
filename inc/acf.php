@@ -22,6 +22,7 @@ function ar_funding_opps(){
             // Do something...
             $html .= "<div class='funding-opp'>
                          <div class='funding-details'>
+                            {$text}
                             <a class='btn btn-ar btn-blue' href='{$link}' aria-label='Apply for {$title} funding.'>{$audience} Application</a>
                         </div>
                     </div>";

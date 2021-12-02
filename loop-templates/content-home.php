@@ -90,7 +90,7 @@ defined( 'ABSPATH' ) || exit;
         <div class="col-md-6">
             <?php the_field('funding_introduction')?>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-5 offset-md-1">
             <?php echo ar_funding_opps();?>
         </div>
            

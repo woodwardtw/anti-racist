@@ -16113,6 +16113,10 @@ a {
   text-decoration: underline;
 }
 
+a:hover {
+  color: #000;
+}
+
 .title a,
 a h1 {
   color: #000;
