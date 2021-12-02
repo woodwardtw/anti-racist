@@ -57,11 +57,11 @@ $container = get_theme_mod( 'understrap_container_type' );
                    We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 </style>
 <div id="mc_embed_signup">
-<form action="https://middlebury.us5.list-manage.com/subscribe/post?u=0d55835ef38be4e02b8a2e9d2&;id=d0ad533d75" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<form action="https://middcreate.us5.list-manage.com/subscribe/post?u=0d55835ef38be4e02b8a2e9d2&amp;id=d0ad533d75" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
                 <h2 id='modalTitle'>Get email updates!</h2>
                 <?php the_field('newsletter_intro', 'option');?>
-<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<!-- <div class="indicates-required"><span class="asterisk">*</span> indicates required</div> -->
 <div class="mc-field-group">
                 <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
 </label>
