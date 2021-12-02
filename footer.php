@@ -45,7 +45,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 </div><!-- #page we need this extra closing tag here -->
 
 <?php wp_footer(); ?>
-<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       
@@ -59,7 +59,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div id="mc_embed_signup">
 <form action="https://middlebury.us5.list-manage.com/subscribe/post?u=0d55835ef38be4e02b8a2e9d2&;id=d0ad533d75" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
-                <h2>Get email updates!</h2>
+                <h2 id='modalTitle'>Get email updates!</h2>
                 <?php the_field('newsletter_intro', 'option');?>
 <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
 <div class="mc-field-group">

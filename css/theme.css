@@ -16116,6 +16116,7 @@ a {
 .title a,
 a h1 {
   color: #000;
+  text-decoration: none;
 }
 
 .title a:hover {
@@ -16218,6 +16219,7 @@ a h1 {
 
 #events a {
   color: #000;
+  text-decoration: none;
 }
 
 #events a:hover {
@@ -16329,6 +16331,14 @@ ul li a {
   font-size: 1.2em;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+#funding h2 {
+  font-size: 4em;
+}
+
+#funding h3 {
+  font-size: 3em;
 }
 
 .funding-details {
