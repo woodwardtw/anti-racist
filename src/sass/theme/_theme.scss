@@ -321,7 +321,7 @@ img {
 	font-weight: 100;
 }
 
-.btn-ar, .tribe-events-content a.btn-ar, #mc-embedded-subscribe {
+.btn-ar, .tribe-events-content a.btn-ar, #mc-embedded-subscribe, .acf-button.button.button-primary {
 				display: block;
 				width: 300px;
 				margin: 60px auto;
@@ -341,7 +341,7 @@ img {
 				background-size: 30px;
 }
 
-.btn-blue {
+.btn-blue, .acf-button.button.button-primary  {
 				background-color: $blue;
 }
 
@@ -351,7 +351,8 @@ img {
 #events .btn-blue:hover a,
 #people .btn-blue:hover,
 #people .btn-blue:hover a,
-.tribe-events-content a.btn-blue:hover {
+.tribe-events-content a.btn-blue:hover, 
+.acf-button.button.button-primary:hover  {
 				background-color: $green;
 				color: $white;
 }

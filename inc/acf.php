@@ -106,3 +106,19 @@ add_filter( 'facetwp_shortcode_html', function( $output, $atts) {
             return $paths;
             
         }
+
+/* populate front end form for groups to be group */
+// add_filter('acf/prepare_field/key=field_61a8de4f52301', 'ar_populate_form_type');
+// function ar_populate_form_type($field) {
+//     global $template;
+//    $page_template = basename($template);
+//   // only on front end
+//   if (is_admin()) {
+//     return $field;
+//   }
+//   if($page_template == 'submit-group.php'){
+//     $field['value'] = 'Organization';
+//   }
+  
+//   return $field;
+//}

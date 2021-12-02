@@ -27,7 +27,7 @@ defined( 'ABSPATH' ) || exit;
 				the_content();
 					$args = array(
 					'id' => 'new-group',
-					'fields' => array('name', 'short_biography', 'twitter', 'personal_site','instagram', 'tiktok'),
+					'fields' => array('name', 'short_biography', 'group_type', 'personal_site', 'twitter','instagram', 'tiktok'),
 			        'post_id'       => 'new_post',
 			        'post_title'   => false,
 					'post_content'	=> false,
@@ -36,7 +36,7 @@ defined( 'ABSPATH' ) || exit;
 			            'post_type'     => 'people',
 			            // 'tags_input' => array($type),
 			        ),
-			        'submit_value'  => 'Add an anti-racist.',
+			        'submit_value'  => 'Add a group',
 				);
 				acf_form($args); 
 				?>

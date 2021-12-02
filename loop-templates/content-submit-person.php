@@ -34,9 +34,9 @@ defined( 'ABSPATH' ) || exit;
 					'html_updated_message'  => '<div id="message" class="updated"><p>Thank you for contributing!</p></div>',
 			        'new_post'      => array(
 			            'post_type'     => 'people',
-			            // 'tags_input' => array($type),
+						'post_category'	=> array(14),
 			        ),
-			        'submit_value'  => 'Add an anti-racist.',
+			        'submit_value'  => 'Add a person',
 				);
 				acf_form($args); 
 				?>
