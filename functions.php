@@ -82,9 +82,9 @@ function ar_gf_event_update($entry, $form ){
         // Do your stuff here.
         $registration = rgar( $entry, '7' );
         $info = rgar( $entry, '8' );
-        $student = rgar( $entry, '11.1');
-        $faculty = rgar( $entry, '11.2');
-        $staff = rgar( $entry, '11.3');
+        $student = rgar( $entry, '12.1');
+        $faculty = rgar( $entry, '12.2');
+        $staff = rgar( $entry, '12.3');
         $tags = array();
         if($student){
           array_push($tags, $student);
