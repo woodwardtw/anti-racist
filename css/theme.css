@@ -16250,6 +16250,8 @@ a h1 {
   -ms-flex-pack: distribute;
   justify-content: space-around;
   list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
 }
 
 #events a {
