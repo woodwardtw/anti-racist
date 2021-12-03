@@ -3,10 +3,10 @@
 
 @font-face {
     font-family: 'VTC Martin';  
-    src: url(../fonts/MARTIN-Regular.woff2) format("woff2"),
-	src: url(../fonts/MARTIN-Regular.woff) format("woff"),
-	src: url(../fonts/MARTIN-Regular.eot) format("eot"),
-	src: url(../fonts/MARTIN-Regular.eot?#iefix) format("embedded-opentype");  
+    src: url("../fonts/MARTIN-Regular.woff2") format("woff2"),
+	 url("../fonts/MARTIN-Regular.woff") format("woff"),
+	 url("../fonts/MARTIN-Regular.eot") format("eot"),
+	 url("../fonts/MARTIN-Regular.eot?#iefix") format("embedded-opentype");  
     font-weight: normal;  
 }
 
@@ -95,6 +95,7 @@ a h1 {
 				list-style: none;
 				padding-left: 0;
 				margin-left: 0;
+				margin: 15px auto 0 auto;
 }
 
 .etc {
@@ -108,7 +109,7 @@ a h1 {
 				font-family: serif;
 				font-style: italic;
 				line-height: 1.1;
-				margin-top: 10px;
+				margin-top: 25px;
 }
 
 .quote-source {
