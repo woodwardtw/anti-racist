@@ -22,6 +22,9 @@ defined( 'ABSPATH' ) || exit;
             <div class="col-md-6 home-intro">
                 <?php the_content();?>
             </div>
+            <div class="col-md-12 middle-menu">
+            <?php wp_nav_menu( array( 'theme_location' => 'home-middle-menu' ) ); ?>
+            </div>
         </div>
         <div class="row events" id="events">
             <div class="col-md-12 ">

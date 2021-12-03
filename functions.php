@@ -65,8 +65,9 @@ if ( ! function_exists('write_log')) {
 function ar_home_menu() {
   register_nav_menus(
     array(
-      'home-menu' => __( 'Home Main Menu' )
-     )
+      'home-menu' => __( 'Home Main Menu' ),
+      'home-middle-menu' => __( 'Home Middle Menu' )
+    )    
    );
  }
  add_action( 'init', 'ar_home_menu' );
