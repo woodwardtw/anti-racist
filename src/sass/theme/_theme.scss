@@ -375,14 +375,28 @@ img {
 	margin: 80px 0;
 }
 
-
 .news {
 				padding: 20px;
 				border: 5px solid $green;
 }
 
-.news a h2 {
+.news a {
 				color: $green;
+				text-decoration-color: $green;
+}
+
+/*regular pages/posts*/
+.entry-title {
+	font-size: 5em;
+	text-align: center;
+}
+
+.entry-content h2 {
+	font-size: 3em;
+}
+
+.entry-content h3 {
+	font-size: 2.5em;
 }
 
 /*PERSON*/
@@ -422,37 +436,40 @@ img {
 				display: none;
 }
 
-.tribe-events .tribe-events-calendar-month__multiday-event-bar,
-.tribe-events .tribe-events-calendar-month__multiday-event-bar-inner {
+.content-area .tribe-events .tribe-events-calendar-month__multiday-event-bar,
+.content-area .tribe-events .tribe-events-calendar-month__multiday-event-bar-inner {
 				background-color: $red;
 }
 
-.tribe-events-c-ical__link, .tribe-events .tribe-events-c-ical__link,
+.tribe-events-c-ical__link, .entry-content .tribe-events .tribe-events-c-ical__link,
 .tribe-events .tribe-events-c-ical__link:visited {
 				border: 1px solid $green;
 				color: $green;
 }
 
-.tribe-common .tribe-common-c-svgicon {
+.entry-content .tribe-common .tribe-common-c-svgicon {
 				color: $green;
 }
 
-.tribe-events .tribe-events-c-ical__link:active,
-.tribe-events .tribe-events-c-ical__link:focus,
-.tribe-events .tribe-events-c-ical__link:hover {
+.entry-content .tribe-events .tribe-events-c-ical__link:active,
+.entry-content .tribe-events .tribe-events-c-ical__link:focus,
+.entry-content .tribe-events .tribe-events-c-ical__link:hover {
 				background-color: $green;
 }
 
-.tribe-events-event-meta a,
-.tribe-events-event-meta a {
+.entry-content .tribe-events-event-meta a,
+.entry-content .tribe-events-event-meta a {
 				text-decoration: underline;
 }
 
-.tribe-events-event-meta a:focus,
-.tribe-events-event-meta a:hover {
+.entry-content .tribe-events-event-meta a:focus,
+.entry-content .tribe-events-event-meta a:hover {
 				color: $green;
 }
 
+.entry-content .tribe-events .datepicker .day.active {
+	background-color: $green;
+}
 
 /*modal newsletter subscribe*/
 #mc_embed_signup_scroll {

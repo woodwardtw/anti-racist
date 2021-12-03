@@ -47,6 +47,20 @@ foreach ( $understrap_includes as $file ) {
 	require_once get_theme_file_path( $understrap_inc_dir . $file );
 }
 
+
+//LOGGER -- like frogger but more useful
+
+if ( ! function_exists('write_log')) {
+  function write_log ( $log )  {
+     if ( is_array( $log ) || is_object( $log ) ) {
+        error_log( print_r( $log, true ) );
+     } else {
+        error_log( $log );
+     }
+  }
+}
+
+
 //home page menu
 function ar_home_menu() {
   register_nav_menus(
@@ -66,8 +80,24 @@ function ar_gf_event_update($entry, $form ){
     {
         $post_id = $post['post_id'];
         // Do your stuff here.
-        $registration = rgar( $entry, '7' );		   
-        $info = rgar( $entry, '8' );		
+        $registration = rgar( $entry, '7' );
+        $info = rgar( $entry, '8' );
+        $student = rgar( $entry, '11.1');
+        $faculty = rgar( $entry, '11.2');
+        $staff = rgar( $entry, '11.3');
+        $tags = array();
+        if($student){
+          array_push($tags, $student);
+        }
+        if($faculty){
+          array_push($tags, $faculty);
+        }
+        if($staff){
+          array_push($tags, $staff);
+        }
+        
+        wp_set_post_tags($post_id, $tags, true);
+
         if($registration)   {
         	update_post_meta($post_id, 'registration_link', $registration);
         	update_field('_registration_link', 'field_61842b4ff7a25', $post_id);
@@ -81,6 +111,8 @@ function ar_gf_event_update($entry, $form ){
 
 add_action( 'gform_after_submission_1', 'ar_gf_event_update', 10, 2 );
 
+
+//adds ACF data to events calendar event
 add_filter( 'the_content', 'ar_events_content_titler', 1 );
  
 function ar_events_content_titler( $content ) {
