@@ -1,6 +1,11 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@800&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@800&display=swap');
 
+@font-face {
+    font-family: VTC Martin;  
+    src: url(../fonts/MARTIN-Regular.woff2);  
+    font-weight: normal;  
+}
 
 body {
 				background-color: #fcf9ed;

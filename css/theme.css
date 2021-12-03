@@ -5,7 +5,6 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@800&display=swap");
 :root {
   --blue: #95B1C1;
   --indigo: #6610f2;
@@ -16084,6 +16083,11 @@ figure.woocommerce-product-gallery__wrapper {
   clip: auto;
 }
 
+@font-face {
+  font-family: VTC Martin;
+  src: url(../fonts/MARTIN-Regular.woff2);
+  font-weight: normal;
+}
 body {
   background-color: #fcf9ed;
 }
