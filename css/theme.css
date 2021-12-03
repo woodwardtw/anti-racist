@@ -16249,6 +16249,7 @@ a h1 {
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+  list-style-type: none;
 }
 
 #events a {
