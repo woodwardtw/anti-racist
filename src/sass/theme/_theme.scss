@@ -2,10 +2,17 @@
 //@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@800&display=swap');
 
 @font-face {
-    font-family: VTC Martin;  
-    src: url(../fonts/MARTIN-Regular.woff2);  
+    font-family: 'VTC Martin';  
+    src: url(../fonts/MARTIN-Regular.woff2) format("woff2"),
+	src: url(../fonts/MARTIN-Regular.woff) format("woff"),
+	src: url(../fonts/MARTIN-Regular.eot) format("eot"),
+	src: url(../fonts/MARTIN-Regular.eot?#iefix) format("embedded-opentype");  
     font-weight: normal;  
 }
+
+html {
+	scroll-behavior: smooth;
+  }
 
 body {
 				background-color: #fcf9ed;

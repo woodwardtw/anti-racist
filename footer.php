@@ -26,7 +26,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<footer class="site-footer" id="colophon">
 
 					<div class="site-info">
-						<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Newsletter Signup</button>
+						<button type="button" class="btn btn-primary btn-ar btn-blue" data-toggle="modal" data-target=".bd-example-modal-lg">Newsletter Signup</button>
 
 						<?php //understrap_site_info(); ?>
 
