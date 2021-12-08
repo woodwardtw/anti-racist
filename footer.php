@@ -45,6 +45,41 @@ $container = get_theme_mod( 'understrap_container_type' );
 </div><!-- #page we need this extra closing tag here -->
 
 <?php wp_footer(); ?>
+<nav class="midd-footer" aria-labelledby="midd-footer-label">
+  <h2 id="midd-footer-label" class="sr-only">Additional navigation</h2>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+          <a href="https://www.middlebury.edu">
+            <img src="https://www.middlebury.edu/office/themes/custom/middlebury_theme/images/middlebury-logo-white.svg?fv=r3sx4o" alt="Middlebury logo." width="195px" height="71px" class="footer-logo">
+          </a>
+      </div>
+      <div class="col-md-9">
+        <ul class="midd-footer__list">
+          <!-- <li class="midd-footer__item">
+            <a href="http://www.middlebury.edu/about" class="midd-footer__link">About Middlebury</a>
+          </li>
+          <li class="midd-footer__item">
+            <a href="http://www.middlebury.edu/giving" class="midd-footer__link">Giving</a>
+          </li> -->
+          <!-- <li class="midd-footer__item">
+            <a href="http://www.middlebury.edu/offices/business/hr/jobseeker" class="midd-footer__link">Employment</a>
+          </li>
+          <li class="midd-footer__item">
+            <a href="http://www.middlebury.edu/office/" class="midd-footer__link">Offices and Services</a>
+          </li> -->
+          <!-- <li class="midd-footer__item">
+            <a href="http://www.middlebury.edu/about/copyright" class="midd-footer__link">Copyright</a>
+          </li>
+          <li class="midd-footer__item">
+            <a href="http://www.middlebury.edu/about/privacy" class="midd-footer__link">Privacy</a>
+          </li>       -->
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</nav>
 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
@@ -80,6 +115,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     </div>
 </form>
 </div>
+
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <!--End mc_embed_signup-->
     </div>

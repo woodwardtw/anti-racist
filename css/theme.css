@@ -16106,6 +16106,10 @@ h4,
   font-family: "VTC Martin", "Kanit", sans-serif;
 }
 
+h1.entry-title, h2, h3, h4, h5 {
+  text-transform: uppercase;
+}
+
 .navbar h1 {
   text-align: center;
 }
@@ -16620,6 +16624,59 @@ img {
 #wrapper-footer-full, #wrapper-footer {
   background-color: #556E4E;
   color: #fff;
+}
+
+/*footer middlebury*/
+.midd-footer {
+  background-color: #022543;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.sr-only, .screen-reader-text, .visually-hidden {
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.midd-footer__list {
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li.midd-footer__item {
+  margin-left: 40px;
+}
+
+.midd-footer__link {
+  color: #fff;
+  display: block;
+  font-size: 0.875rem;
+  padding-bottom: 0.25rem;
+  padding-top: 0.25rem;
+  white-space: nowrap;
+}
+
+.footer-logo {
+  max-width: 150px;
+  margin: 0 auto;
+  display: block;
 }
 
 @media only screen and (max-width: 800px) {
