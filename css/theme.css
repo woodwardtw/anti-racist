@@ -16239,7 +16239,7 @@ a h1 {
   margin: 30px 0;
 }
 
-#menu-middle-menu {
+.middle-menu ul {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
