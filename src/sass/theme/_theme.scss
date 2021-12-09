@@ -587,6 +587,32 @@ li.midd-footer__item {
 	display: block;
 }
 
+//SVG RANDOM COLORS 
+
+#random-pattern polygon {
+	&.red {
+		fill: $red;
+		stroke: $red;
+	  }
+	&.blue {
+		fill: $blue;
+		stroke: $blue;
+	}
+	&.green {
+		fill: $green;
+		stroke: $green;
+	}
+	&.yellow {
+		fill: $yellow;
+		stroke: $yellow;
+	}
+	&.black {
+		fill: $black;
+		stroke: $black;
+	}
+}
+
+
 @media only screen and (max-width: 800px) {
 				.title {
 					padding-top: 10px;

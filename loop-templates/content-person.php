@@ -23,8 +23,16 @@ defined( 'ABSPATH' ) || exit;
 
 	</header><!-- .entry-header -->
 	<div class="row">
-		<div class='green col-md-5'>
-			<?php echo get_the_post_thumbnail( $post->ID, 'medium', 'single-person-img' ); ?>
+		<div class='col-md-5'>
+			<div class="square green">
+				<?php 
+					if(has_post_thumbnail($post->ID)){
+						echo get_the_post_thumbnail( $post->ID, 'medium', 'single-person-img' );
+					} else {
+						get_template_part( 'imgs/inline', 'tri-svg' );
+					} 
+				?>
+			</div>
 		</div>
 		<div class="col-md-7">
 			<?php the_field('short_biography');?>			
