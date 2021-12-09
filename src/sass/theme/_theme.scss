@@ -471,6 +471,7 @@ img {
 	margin: 0 20px;
 	padding: 20px;
 	border: 4px solid $black;
+	background-color: $white;
 }
 
 .facet-people-block {
@@ -576,6 +577,17 @@ img {
 #wrapper-footer-full, #wrapper-footer {
 	background-color: $green;
 	color: $white;
+}
+
+#wrapper-footer-full ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 30px 0;
+	justify-content: space-around;
+	list-style-type: none;
+	padding-left: 0;
+	margin-left: 0;
 }
 
 /*footer middlebury*/
