@@ -35,7 +35,7 @@ defined( 'ABSPATH' ) || exit;
 <!-- 					<h2>Length</h2>
  -->					<?php //echo facetwp_display( 'facet', 'resource_length');?>	
 				</div>
-				<a class="btn btn-ar btn-blue" href="contribute-resource/">Add a resource</a>
+				<a class="btn btn-ar btn-blue" href="<?php echo get_bloginfo( 'url' );?>/contribute-resource/">Add a resource</a>
 			</div>
 			<div class="col-md-9" id="facet-resources">
 				 <?php echo facetwp_display( 'template', 'resources');?>	

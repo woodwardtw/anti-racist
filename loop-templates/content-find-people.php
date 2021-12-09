@@ -34,7 +34,7 @@ defined( 'ABSPATH' ) || exit;
 					<?php echo facetwp_display( 'facet', 'find_connections');?>	
                     <?php echo facetwp_display( 'facet', 'people');?>	
 				</div>
-				<a class="btn btn-ar btn-blue" href="contribute-a-connection">Add a connection</a>
+				<a class="btn btn-ar btn-blue" href="<?php echo get_bloginfo( 'url' );?>/contribute-a-connection">Add a connection</a>
 			</div>
 			<div class="col-md-9" id="facet-people">
 				 <?php echo facetwp_display( 'template', 'people');?>	
