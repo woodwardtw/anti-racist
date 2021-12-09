@@ -29,7 +29,7 @@ defined( 'ABSPATH' ) || exit;
 	</div><!-- .entry-content -->
 	<div class="row">
 			<div class="col-md-3">
-				<div class="facet-block">
+				<div class="facet-block" id="find-people">
 					<h2>Find People</h2>         
 					<?php echo facetwp_display( 'facet', 'find_connections');?>	
                     <?php echo facetwp_display( 'facet', 'people');?>	
@@ -40,7 +40,7 @@ defined( 'ABSPATH' ) || exit;
 			</div>
 			<div class="col-md-12">
 				<?php echo do_shortcode('[facetwp pager="true"]') ;?>
-					<button class="btn btn-ar" value="Reset" onclick="FWP.reset()" class="facet-reset" />Reset Filters</button>					
+					<button class="btn btn-ar btn-blue" value="Reset" onclick="FWP.reset()" class="facet-reset" />Reset Filters</button>					
 			</div>
 	</div>
 

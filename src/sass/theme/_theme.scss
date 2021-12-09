@@ -470,6 +470,10 @@ img {
 				color: $black;
 }
 
+#find-people .facetwp-facet:first-of-type{
+	margin-bottom: 0;
+}
+
 /*calendar adjustments*/
 .tribe-common--breakpoint-medium.tribe-events .tribe-common-c-btn.tribe-events-c-search__button {
 				background-color: $green;

@@ -42,7 +42,7 @@ defined( 'ABSPATH' ) || exit;
 			</div>
 			<div class="col-md-12">
 				<?php echo do_shortcode('[facetwp pager="true"]') ;?>
-					<button class="btn btn-ar" value="Reset" onclick="FWP.reset()" class="facet-reset" />Reset Filters</button>					
+					<button class="btn btn-ar btn-blue" value="Reset" onclick="FWP.reset()" class="facet-reset" />Reset Filters</button>					
 			</div>
 	</div>
 
