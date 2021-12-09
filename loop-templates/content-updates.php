@@ -20,11 +20,11 @@ defined( 'ABSPATH' ) || exit;
 	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
 	<div class="entry-content">
-	<a class="btn btn-ar btn-blue" href="<?php echo get_bloginfo( 'url' );?>/contribute-updates/">Add an update</a>
 		<?php
 		the_content();
 		//understrap_link_pages();
 		?>
+		<a class="btn btn-ar btn-blue" href="<?php echo get_bloginfo( 'url' );?>/contribute-updates/">Add an update</a>
         <?php 
         echo ar_the_updates();
         ?>
