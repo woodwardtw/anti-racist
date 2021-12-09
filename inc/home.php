@@ -174,3 +174,29 @@ function ar_return_first_person_link(){
             }
 
 }
+
+
+function ar_the_updates(){
+    $html = '';
+    $args = array(
+            'post_type'  => 'post',
+            'posts_per_page' => 20,
+            'category_name' => 'news',
+    );
+  $news_query = new WP_Query( $args ); 
+  // The Loop
+    if ( $news_query->have_posts() ) :
+        while ( $news_query->have_posts() ) : $news_query->the_post();
+          // Do Stuff
+            $title = get_the_title();
+            $url = get_permalink();
+            $excerpt = get_the_excerpt();
+            $html .=  "<div class='col-md-4'><div class='news card h-100'><a href='{$url}'><h2>{$title}</h2></a><p>{$excerpt}</p></div></div>";
+        endwhile;
+    endif;
+
+    // Reset Post Data
+    wp_reset_postdata();
+        return $html;
+
+}
