@@ -1,6 +1,6 @@
 <?php
 /**
- * Partial template for content in find-resource.php
+ * Partial template for content in find-people.php
  *
  * @package Understrap
  */
@@ -30,15 +30,13 @@ defined( 'ABSPATH' ) || exit;
 	<div class="row">
 			<div class="col-md-3">
 				<div class="facet-block">
-					<h2>DIY Type</h2>
-					<?php echo facetwp_display( 'facet', 'resource_type');?>	
-<!-- 					<h2>Length</h2>
- -->					<?php //echo facetwp_display( 'facet', 'resource_length');?>	
+					<h2>Find People</h2>         
+					<?php echo facetwp_display( 'facet', 'find_connections');?>	
+                    <?php echo facetwp_display( 'facet', 'people');?>	
 				</div>
-				<a class="btn btn-ar btn-blue" href="contribute-resource/">Add a resource</a>
 			</div>
-			<div class="col-md-9" id="facet-resources">
-				 <?php echo facetwp_display( 'template', 'resources');?>	
+			<div class="col-md-9" id="facet-people">
+				 <?php echo facetwp_display( 'template', 'people');?>	
 			</div>
 			<div class="col-md-12">
 				<?php echo do_shortcode('[facetwp pager="true"]') ;?>
