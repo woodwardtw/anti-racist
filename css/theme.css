@@ -16495,6 +16495,7 @@ img {
 .news {
   padding: 20px;
   border: 5px solid #556E4E;
+  border-radius: 0;
 }
 
 .news a {
@@ -16529,6 +16530,15 @@ img {
   color: #000;
   margin: 20px 0;
   display: inline-block;
+}
+
+/*UPDATES*/
+.updates-row {
+  margin-top: 80px;
+}
+
+.updates-row .col-md-4 {
+  margin-bottom: 40px;
 }
 
 /*facet resources*/

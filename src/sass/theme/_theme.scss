@@ -411,6 +411,7 @@ img {
 .news {
 				padding: 20px;
 				border: 5px solid $green;
+				border-radius: 0;
 }
 
 .news a {
@@ -444,6 +445,15 @@ img {
 	color: $black;
 	margin: 20px 0;
 	display: inline-block;
+}
+
+/*UPDATES*/
+.updates-row {
+	margin-top: 80px;
+}
+
+.updates-row .col-md-4 {
+	margin-bottom: 40px;
 }
 
 /*facet resources*/
