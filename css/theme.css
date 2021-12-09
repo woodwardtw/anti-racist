@@ -16542,6 +16542,14 @@ img {
   border: 4px solid #000;
 }
 
+.facet-people-block {
+  border-radius: 0;
+}
+
+#facet-people .col-md-4 {
+  margin-bottom: 30px;
+}
+
 #facet-resources .col-md-6 {
   margin-bottom: 20px;
 }

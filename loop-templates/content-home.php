@@ -81,7 +81,7 @@ defined( 'ABSPATH' ) || exit;
         </div>
         <?php echo ar_home_people();?>
         <div class="col-md-12 d-flex justify-content-around connection-buttons">
-            <a class="btn btn-ar btn-blue" href="people">Find more connections</a>
+            <a class="btn btn-ar btn-blue" href="connect">Find more connections</a>
             <a class="btn btn-ar btn-blue" href="contribute-a-connection">Add a connection</a>
         </div>
 
