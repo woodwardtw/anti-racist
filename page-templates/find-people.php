@@ -17,7 +17,7 @@ if ( is_front_page() ) {
 }
 ?>
 
-<div class="wrapper" id="full-width-page-wrapper">
+<div class="wrapper facet-page" id="full-width-page-wrapper">
 
 	<div class="container-fluid" id="content">
 
