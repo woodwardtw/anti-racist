@@ -122,3 +122,15 @@ add_filter( 'facetwp_shortcode_html', function( $output, $atts) {
   
 //   return $field;
 //}
+
+function people_related_image($class){
+    global $post;
+    if(has_post_thumbnail($post->ID)){
+        return get_the_post_thumbnail( $post->ID, 'medium', $class );
+    } else {
+        return file_get_contents(locate_template("imgs/inline-tri-svg.php"));
+       //return get_template_part( 'imgs/inline', 'tri-svg' );
+    } 
+}
+
+

@@ -26,11 +26,7 @@ defined( 'ABSPATH' ) || exit;
 		<div class='col-md-5'>
 			<div class="square green">
 				<?php 
-					if(has_post_thumbnail($post->ID)){
-						echo get_the_post_thumbnail( $post->ID, 'medium', 'single-person-img' );
-					} else {
-						get_template_part( 'imgs/inline', 'tri-svg' );
-					} 
+				echo people_related_image('single-person-img');
 				?>
 			</div>
 		</div>

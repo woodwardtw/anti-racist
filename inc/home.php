@@ -123,17 +123,18 @@ function ar_home_people(){
           // Do Stuff
             $title = get_the_title();
             $color = ar_color_picker($count);
-            $img = get_the_post_thumbnail_url();
-            $url = get_permalink(); // change to this when people single post is more robust
-            //$url = ar_return_first_person_link();
+            $img = people_related_image('twit');
+            $url = get_permalink();
             //$description = get_content; //if we want to show more content at some point
             $html .=  "<div class='col-md-3'>
-                                    <a href='{$url}'><div class='{$color}'>
-                <img class='twit' src='{$img}' alt='Profile image for {$title}.'></a>
-            </div>
-            <a href='{$url}'>{$title}</a></li>
-        </div>
-            ";
+                        <a href='{$url}'>
+                            <div class='{$color}'>
+                                {$img}                            
+                            </div>
+                        </a>
+                        <a href='{$url}'>{$title}</a></li>
+                    </div>
+                        ";
         endwhile;       
     endif;
     // Reset Post Data
@@ -157,7 +158,7 @@ function ar_color_picker($count){
         }
 }
 
-//just gives the link from the repeater field of links for a person on the home page
+//just gives the link from the repeater field of links for a person on the home page ****deprecated now links to person/group page
 function ar_return_first_person_link(){
             if(get_field('twitter')){
                 return get_field('twitter');
