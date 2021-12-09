@@ -16290,6 +16290,8 @@ a .card {
 
 a .month {
   font-size: 2vw;
+  margin-top: 20px;
+  margin-bottom: -20px;
 }
 
 a .day {
@@ -16333,6 +16335,7 @@ a .event-title {
   width: 100%;
   text-overflow: ellipsis;
   display: inline-block;
+  margin-top: 10px;
 }
 
 .media-list li {
@@ -16738,6 +16741,10 @@ li.midd-footer__item {
   max-width: 150px;
   margin: 0 auto;
   display: block;
+}
+
+#random-pattern {
+  border: 5px solid #000;
 }
 
 #random-pattern polygon.red {
