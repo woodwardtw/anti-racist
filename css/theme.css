@@ -16106,6 +16106,10 @@ h4,
   font-family: "VTC Martin", "Kanit", sans-serif;
 }
 
+h2, h3, h4, h5 {
+  letter-spacing: 0.75px;
+}
+
 h1.entry-title, h2, h3, h4, h5 {
   text-transform: uppercase;
 }
@@ -16538,12 +16542,16 @@ img {
 }
 
 .updates-row .col-md-4 {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 /*facet resources*/
 .facet-page {
   padding: 0 3vw;
+}
+
+.facet-row {
+  margin-top: 40px;
 }
 
 .facet-block {

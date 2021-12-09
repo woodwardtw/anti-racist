@@ -27,7 +27,7 @@ defined( 'ABSPATH' ) || exit;
 		?>
 
 	</div><!-- .entry-content -->
-	<div class="row">
+	<div class="row facet-row">
 			<div class="col-md-3">
 				<div class="facet-block">
 					<h2>DIY Type</h2>

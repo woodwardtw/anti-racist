@@ -27,13 +27,14 @@ defined( 'ABSPATH' ) || exit;
 		?>
 
 	</div><!-- .entry-content -->
-	<div class="row">
+	<div class="row facet-row">
 			<div class="col-md-3">
 				<div class="facet-block" id="find-people">
 					<h2>Find People</h2>         
 					<?php echo facetwp_display( 'facet', 'find_connections');?>	
                     <?php echo facetwp_display( 'facet', 'people');?>	
 				</div>
+				<a class="btn btn-ar btn-blue" href="contribute-a-connection">Add a connection</a>
 			</div>
 			<div class="col-md-9" id="facet-people">
 				 <?php echo facetwp_display( 'template', 'people');?>	
