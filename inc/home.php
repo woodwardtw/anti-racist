@@ -197,6 +197,6 @@ function ar_the_updates(){
 
     // Reset Post Data
     wp_reset_postdata();
-        return $html;
+        return '<div class="row events-row">'.$html."</div>";
 
 }
