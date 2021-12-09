@@ -16512,6 +16512,7 @@ img {
 .entry-title {
   font-size: 5em;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .entry-content h2 {
@@ -16523,6 +16524,10 @@ img {
 }
 
 /*PERSON*/
+.person-links .btn, .person-links .wpcf7 input[type=submit], .wpcf7 .person-links input[type=submit], .person-links .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message .person-links a.button, .person-links .woocommerce-info a.button, .woocommerce-info .person-links a.button {
+  max-width: 90%;
+}
+
 .person-link {
   min-width: 150px;
   margin-top: 30px;
