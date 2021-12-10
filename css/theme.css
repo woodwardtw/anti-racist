@@ -16542,6 +16542,18 @@ img {
   font-size: 2.5em;
 }
 
+/*update posts*/
+.entry-meta {
+  margin-bottom: 20px;
+  font-size: 0.8em;
+}
+
+.post .entry-content p, .post .entry-content ul {
+  font-size: 1.3em;
+  line-height: 1.3;
+  margin-bottom: 30px;
+}
+
 /*PERSON*/
 .person-links .btn, .person-links .wpcf7 input[type=submit], .wpcf7 .person-links input[type=submit], .person-links .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message .person-links a.button, .person-links .woocommerce-info a.button, .woocommerce-info .person-links a.button {
   max-width: 90%;
