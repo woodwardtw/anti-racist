@@ -15,34 +15,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
-<div class="wrapper" id="wrapper-footer">
-
-	<div class="<?php echo esc_attr( $container ); ?>">
-
-		<div class="row">
-
-			<div class="col-md-12">
-
-				<footer class="site-footer" id="colophon">
-
-					<div class="site-info">
-						<!-- <button type="button" class="btn btn-primary btn-ar btn-blue" data-toggle="modal" data-target=".bd-example-modal-lg">Newsletter Signup</button> -->
-
-						<?php //understrap_site_info(); ?>
-
-					</div><!-- .site-info -->
-
-				</footer><!-- #colophon -->
-
-			</div><!--col end -->
-
-		</div><!-- row end -->
-
-	</div><!-- container end -->
-
 </div><!-- wrapper end -->
-
-</div><!-- #page we need this extra closing tag here -->
 <nav class="midd-footer" aria-labelledby="midd-footer-label">
   <h2 id="midd-footer-label" class="sr-only">Additional navigation</h2>
   <div class="container-fluid">
@@ -78,6 +51,9 @@ $container = get_theme_mod( 'understrap_container_type' );
     </div>
   </div>
 </nav>
+
+</div><!-- #page we need this extra closing tag here -->
+
 <?php wp_footer(); ?>
 
 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
