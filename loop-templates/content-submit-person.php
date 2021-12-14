@@ -36,7 +36,7 @@ defined( 'ABSPATH' ) || exit;
 			            'post_type'     => 'people',
 						'post_category'	=> array(14),
 			        ),
-			        'submit_value'  => 'Add a person',
+			        'submit_value'  => 'Add a connection',
 				);
 				acf_form($args); 
 				?>
