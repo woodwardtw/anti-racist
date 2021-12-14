@@ -217,3 +217,84 @@ function ar_group_register_tax_orgs() {
     )
   );
 }
+
+// Register Custom Post Type people
+// Post Type Key: quote
+function ar_create_quote_cpt() {
+    $labels = array(
+    'name' => __( 'Quote', 'Post Type General Name', 'textdomain' ),
+    'singular_name' => __( 'Quote', 'Post Type Singular Name', 'textdomain' ),
+    'menu_name' => __( 'Quotes', 'textdomain' ),
+    'name_admin_bar' => __( 'Quotes', 'textdomain' ),
+    'archives' => __( 'quote Archives', 'textdomain' ),
+    'attributes' => __( 'quote Attributes', 'textdomain' ),
+    'parent_item_colon' => __( 'quote:', 'textdomain' ),
+    'all_items' => __( 'All quotes', 'textdomain' ),
+    'add_new_item' => __( 'Add New quote', 'textdomain' ),
+    'add_new' => __( 'Add New', 'textdomain' ),
+    'new_item' => __( 'New quote', 'textdomain' ),
+    'edit_item' => __( 'Edit quote', 'textdomain' ),
+    'update_item' => __( 'Update quote', 'textdomain' ),
+    'view_item' => __( 'View quote', 'textdomain' ),
+    'view_items' => __( 'View quotes', 'textdomain' ),
+    'search_items' => __( 'Search quotes', 'textdomain' ),
+    'not_found' => __( 'Not found', 'textdomain' ),
+    'not_found_in_trash' => __( 'Not found in Trash', 'textdomain' ),
+    'featured_image' => __( 'Featured Image', 'textdomain' ),
+    'set_featured_image' => __( 'Set featured image', 'textdomain' ),
+    'remove_featured_image' => __( 'Remove featured image', 'textdomain' ),
+    'use_featured_image' => __( 'Use as featured image', 'textdomain' ),
+    'insert_into_item' => __( 'Insert into quote', 'textdomain' ),
+    'uploaded_to_this_item' => __( 'Uploaded to this quote', 'textdomain' ),
+    'items_list' => __( 'People list', 'textdomain' ),
+    'items_list_navigation' => __( 'quote list navigation', 'textdomain' ),
+    'filter_items_list' => __( 'Filter quote list', 'textdomain' ),
+  );
+  $args = array(
+    'label' => __( 'Quotes', 'textdomain' ),
+    'description' => __( '', 'textdomain' ),
+    'labels' => $labels,
+    'menu_icon' => '',
+    'supports' => array('title', 'editor', 'revisions', 'author', 'trackbacks', 'custom-fields', 'thumbnail',),
+    'taxonomies' => array('category', 'post_tag'),
+    'public' => true,
+    'show_ui' => true,
+    'show_in_menu' => true,
+    'menu_position' => 5,
+    'show_in_admin_bar' => true,
+    'show_in_nav_menus' => true,
+    'can_export' => true,
+    'has_archive' => true,
+    'hierarchical' => false,
+    'exclude_from_search' => false,
+    'show_in_rest' => true,
+    'publicly_queryable' => true,
+    'capability_type' => 'post',
+    'menu_icon' => 'dashicons-admin-comments',
+  );
+  register_post_type( 'quote', $args );
+  
+  // flush rewrite rules because we changed the permalink structure
+  global $wp_rewrite;
+  $wp_rewrite->flush_rules();
+}
+add_action( 'init', 'ar_create_quote_cpt', 0 );
+
+//auto set quote title based on first 40 characters of quote body
+function ar_auto_quote_title(){
+  global $post;
+  $post_id = $post->ID;
+  $type = get_post_type($post_id);
+  if ($type === 'quote'){
+    remove_action( 'save_post', 'ar_auto_quote_title' );
+    $quote = substr(get_the_content($post_id),0, 40) . ' . . .';
+    $my_post = array(
+        'ID'           => $post_id,
+        'post_title'   => wp_strip_all_tags($quote),      
+    );
+
+  // Update the post into the database
+    wp_update_post( $my_post );
+  }
+}
+add_action( 'save_post', 'ar_auto_quote_title' );
