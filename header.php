@@ -52,11 +52,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             <!--end menu block-->
             <div class="col-md-5">
                 <div class="etc">
-                    <div class="quote">
-                        "To be antiracist is a radical choice in the face of history, requiring a radical reorientation of our consciousness."
-                    </div>
-                <div class="quote-source">IBRAM X. KENDI</div>
-                </div>
+                   <?php echo ar_random_quote();?>
             </div>
             <div class="col-md-12">
                 <div class="tag-line">

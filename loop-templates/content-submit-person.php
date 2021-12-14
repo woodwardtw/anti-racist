@@ -27,7 +27,7 @@ defined( 'ABSPATH' ) || exit;
 				the_content();
 					$args = array(
 					'id' => 'new-person',
-					'fields' => array('name', 'short_biography', 'twitter', 'personal_site','instagram', 'tiktok'),
+					'fields' => array('name', 'short_biography', 'twitter', 'personal_site','instagram', 'facebook', 'tiktok'),
 			        'post_id'       => 'new_post',
 			        'post_title'   => false,
 					'post_content'	=> false,

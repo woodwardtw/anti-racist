@@ -283,18 +283,21 @@ add_action( 'init', 'ar_create_quote_cpt', 0 );
 //auto set quote title based on first 40 characters of quote body
 function ar_auto_quote_title(){
   global $post;
-  $post_id = $post->ID;
-  $type = get_post_type($post_id);
-  if ($type === 'quote'){
-    remove_action( 'save_post', 'ar_auto_quote_title' );
-    $quote = substr(get_the_content($post_id),0, 40) . ' . . .';
-    $my_post = array(
-        'ID'           => $post_id,
-        'post_title'   => wp_strip_all_tags($quote),      
-    );
-
-  // Update the post into the database
-    wp_update_post( $my_post );
+  if($post){
+    $post_id = $post->ID;
+    $type = get_post_type($post_id);
+    if ($type === 'quote'){
+      remove_action( 'save_post', 'ar_auto_quote_title' );
+      $quote = substr(get_the_content($post_id),0, 30) . ' . . .';
+      $my_post = array(
+          'ID'           => $post_id,
+          'post_title'   => wp_strip_all_tags($quote),      
+      );
+  
+    // Update the post into the database
+      wp_update_post( $my_post );
+    }
   }
+ 
 }
 add_action( 'save_post', 'ar_auto_quote_title' );

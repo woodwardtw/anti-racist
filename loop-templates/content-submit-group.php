@@ -27,7 +27,7 @@ defined( 'ABSPATH' ) || exit;
 				the_content();
 					$args = array(
 					'id' => 'new-group',
-					'fields' => array('name', 'short_biography', 'group_type', 'personal_site', 'twitter','instagram', 'tiktok'),
+					'fields' => array('name', 'short_biography', 'group_type', 'personal_site', 'twitter','facebook', 'instagram', 'tiktok'),
 			        'post_id'       => 'new_post',
 			        'post_title'   => false,
 					'post_content'	=> false,

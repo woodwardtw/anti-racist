@@ -10,6 +10,39 @@
 add_filter('acf/settings/remove_wp_meta_box', '__return_false');
 add_filter( 'is_protected_meta', '__return_false' ); 
 
+//quote randomizer
+function ar_random_quote(){
+    $list = '';
+    $args = array(
+            'post_type'  => 'quote',
+            'posts_per_page' => 1,
+            'orderby'        => 'rand',         
+    );
+
+    $quote_query = new WP_Query( $args ); 
+    // The Loop
+    $html = '';
+    $count = 0;
+    if ( $quote_query->have_posts() ) :
+        while ( $quote_query->have_posts() ) : $quote_query->the_post(); 
+          // Do Stuff
+            $author = get_field('source');
+            $quote = get_the_content();        
+            //$description = get_content; //if we want to show more content at some point
+            $html .=  "<div class='quote'>
+                                \"{$quote}\"
+                            </div>
+                        <div class='quote-source'>{$author}</div>
+                        </div>
+                        ";
+        endwhile;       
+    endif;
+    // Reset Post Data
+    wp_reset_postdata();
+    return $html;
+}
+
+
 //home page events loop
 function ar_show_four_events(){
     $html = '';
