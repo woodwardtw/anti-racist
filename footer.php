@@ -43,8 +43,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 </div><!-- wrapper end -->
 
 </div><!-- #page we need this extra closing tag here -->
-
-<?php wp_footer(); ?>
 <nav class="midd-footer" aria-labelledby="midd-footer-label">
   <h2 id="midd-footer-label" class="sr-only">Additional navigation</h2>
   <div class="container-fluid">
@@ -80,6 +78,8 @@ $container = get_theme_mod( 'understrap_container_type' );
     </div>
   </div>
 </nav>
+<?php wp_footer(); ?>
+
 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
