@@ -31,7 +31,7 @@ defined( 'ABSPATH' ) || exit;
                 <div class="label">SHOW UP</div>
             </div>
             <?php echo ar_show_four_events();?>  
-            <div class="col-md-12 d-flex justify-content-around home-event-buttons">
+            <div class="col-md-12 home-buttons home-event-buttons">
                 <a class="btn btn-ar btn-blue" href="live-events">Find more events</a>
                 <a class="btn btn-ar btn-blue" href="add-event">Add an event</a> 
             </div>       
@@ -69,7 +69,7 @@ defined( 'ABSPATH' ) || exit;
                 </div>
             </div>
         </div>
-        <div class="col-md-12 d-flex justify-content-around">
+        <div class="col-md-12 home-buttons home-resources-buttons">
             <a class="btn btn-ar btn-blue" href="diy-learning">Find more resources</a>
             <a class="btn btn-ar btn-blue" href="contribute-resource/">Add a resource</a>
         </div>
@@ -80,9 +80,10 @@ defined( 'ABSPATH' ) || exit;
             <div class="label">CONNECT</div>
         </div>
         <?php echo ar_home_people();?>
-        <div class="col-md-12 d-flex justify-content-around connection-buttons">
+        <div class="col-md-12 home-buttons connection-buttons home-people-buttons">
             <a class="btn btn-ar btn-blue" href="connect">Find more connections</a>
-            <a class="btn btn-ar btn-blue" href="contribute-a-connection">Add a connection</a>
+            <a class="btn btn-ar btn-blue" href="contribute-a-connection">Add a person</a>
+            <a class="btn btn-ar btn-blue" href="contribute-a-group">Add a group</a>
         </div>
 
     </div>
@@ -106,7 +107,7 @@ defined( 'ABSPATH' ) || exit;
         </div>
             <?php echo ar_home_news();?>
 
-        <div class="col-md-12 d-flex justify-content-around">
+        <div class="col-md-12 home-buttons home-updates-buttons">
             <a class="btn btn-ar btn-blue" href="updates">See more updates</a>
             <a class="btn btn-ar btn-blue" href="contribute-updates/">Add an update</a>
         </div>

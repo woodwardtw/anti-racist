@@ -114,7 +114,7 @@ a h1 {
 
 .quote {
 				font-size: 1.8em;
-				font-family: serif;
+				font-family: sans-serif;
 				font-style: italic;
 				line-height: 1.1;
 				margin-top: 25px;
@@ -160,26 +160,31 @@ a h1 {
 				text-align: right;
 }
 
-.middle-menu {
-	background-color: $red;
-	margin: 30px 0;
-}
+// .middle-menu {
+// 	background-color: $red;
+// 	margin: 30px 0;
+// }
 
-.middle-menu ul {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	margin: 30px 0;
-	justify-content: space-around;
-	list-style-type: none;
-	padding-left: 0;
-	margin-left: 0;
-}
+// .middle-menu ul {
+// 	display: flex;
+// 	flex-direction: row;
+// 	flex-wrap: wrap;
+// 	margin: 30px 0;
+// 	justify-content: space-around;
+// 	list-style-type: none;
+// 	padding-left: 0;
+// 	margin-left: 0;
+// }
 
 .home-intro p{
 	font-size: 1.3em;
     line-height: 1.3;
 	margin-bottom: 30px;
+}
+
+.home-buttons {
+	display: flex;
+	margin-top: 30px;
 }
 
 #events a {
@@ -228,9 +233,6 @@ a .event-title {
 				line-height: 1.1;
 }
 
-.home-event-buttons {
-	margin-top: 30px;
-}
 
 .media {
 				margin-top: 50px;
@@ -387,6 +389,7 @@ img {
 				font-weight: 700;
 				text-decoration: none;
 				transition: all ease .3s;
+				line-height: 1.1;
 }
 
 .btn-ar:hover, #mc-embedded-subscribe:hover {
@@ -778,7 +781,7 @@ li.midd-footer__item {
 				}
 
 				.btn-ar {
-					width: 45%;
+					width: 100%;
 				}
 
 				.media-type {
