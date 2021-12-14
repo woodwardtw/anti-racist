@@ -16110,6 +16110,10 @@ h2, h3, h4, h5 {
   letter-spacing: 0.75px;
 }
 
+.header {
+  width: 100%;
+}
+
 h1.entry-title, h2, h3, h4, h5 {
   text-transform: uppercase;
 }

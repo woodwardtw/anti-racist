@@ -19,27 +19,20 @@ function ar_random_quote(){
             'orderby'        => 'rand',         
     );
 
-    $quote_query = new WP_Query( $args ); 
+    $quote_query = get_posts( $args ); //changed from wpquery bc of issues with facetwp 
     // The Loop
     $html = '';
-    $count = 0;
-    if ( $quote_query->have_posts() ) :
-        while ( $quote_query->have_posts() ) : $quote_query->the_post(); 
-          // Do Stuff
-            $author = get_field('source');
-            $quote = get_the_content();        
-            //$description = get_content; //if we want to show more content at some point
+    //var_dump($quote_query[0]);
+            $author = get_field('source', $quote_query[0]->ID);
+            $quote = $quote_query[0]->post_content;
             $html .=  "<div class='quote'>
                                 \"{$quote}\"
                             </div>
                         <div class='quote-source'>{$author}</div>
                         </div>
-                        ";
-        endwhile;       
-    endif;
-    // Reset Post Data
-    wp_reset_postdata();
+                         ";
     return $html;
+
 }
 
 
