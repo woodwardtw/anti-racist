@@ -233,3 +233,13 @@ function ar_the_updates(){
         return '<div class="row facet-row">'.$html."</div>";
 
 }
+
+
+function ar_add_newsletter($items, $args) {
+     //var_dump($args->menu);
+    if( $args->menu->name == 'footer' ){
+    $items .= '<li><button type="button" class="btn btn-primary btn-ar btn-white" data-toggle="modal" data-target=".bd-example-modal-lg">Newsletter Signup</button></li>';
+    }
+  return $items;
+}
+add_filter('wp_nav_menu_items', 'ar_add_newsletter', 10, 2);
