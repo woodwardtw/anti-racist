@@ -27,7 +27,7 @@ defined( 'ABSPATH' ) || exit;
 				the_content();
 					$args = array(
 					'id' => 'new-resource',
-					'fields' => array('link','summary','type'),
+					'fields' => array('link','summary','resource_type'),
 			        'post_id'       => 'new_post',
 			        'post_title'   => true,
 					'post_content'	=> false,
@@ -36,7 +36,7 @@ defined( 'ABSPATH' ) || exit;
 			            'post_type'     => 'resource',
 			            // 'tags_input' => array($type),
 			        ),
-			        'submit_value'  => 'Add your resource.',
+			        'submit_value'  => 'Add a resource',
 				);
 				acf_form($args); 
 				?>

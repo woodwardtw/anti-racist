@@ -39,8 +39,8 @@
         },
         {
             "key": "field_617c4a99e784a",
-            "label": "Type",
-            "name": "type",
+            "label": "Resource Type",
+            "name": "resource_type",
             "type": "taxonomy",
             "instructions": "",
             "required": 0,
@@ -50,14 +50,14 @@
                 "class": "",
                 "id": ""
             },
-            "taxonomy": "Types",
-            "field_type": "radio",
-            "allow_null": 0,
+            "taxonomy": "types",
+            "field_type": "checkbox",
             "add_term": 0,
             "save_terms": 1,
             "load_terms": 1,
             "return_format": "object",
-            "multiple": 0
+            "multiple": 0,
+            "allow_null": 0
         },
         {
             "key": "field_61852516116b5",
@@ -113,5 +113,6 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1636127061
+    "show_in_rest": 0,
+    "modified": 1639572957
 }

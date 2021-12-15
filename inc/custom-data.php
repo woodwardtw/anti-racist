@@ -81,7 +81,7 @@ function create_type_taxonomies()
   // Add new taxonomy, NOT hierarchical (like tags)
   $labels = array(
     'name' => _x( 'Types', 'taxonomy general name' ),
-    'singular_name' => _x( 'type', 'taxonomy singular name' ),
+    'singular_name' => _x( 'Type', 'taxonomy singular name' ),
     'search_items' =>  __( 'Search Types' ),
     'popular_items' => __( 'Popular Types' ),
     'all_items' => __( 'All Types' ),
@@ -93,18 +93,18 @@ function create_type_taxonomies()
     'new_item_name' => __( 'New type' ),
     'add_or_remove_items' => __( 'Add or remove Types' ),
     'choose_from_most_used' => __( 'Choose from the most used Types' ),
-    'menu_name' => __( 'type' ),
+    'menu_name' => __( 'Types' ),
   );
 
 //registers taxonomy specific post types - default is just post
-  register_taxonomy('Types',array('resource'), array(
+  register_taxonomy('types',array('resource'), array(
     'hierarchical' => true,
     'labels' => $labels,
     'show_ui' => true,
     'meta_box_cb'                => false,
     'update_count_callback' => '_update_post_term_count',
     'query_var' => true,
-    'rewrite' => array( 'slug' => 'type' ),
+    'rewrite' => array( 'slug' => 'resource_type' ),
     'show_in_rest'          => true,
     'rest_base'             => 'resource_type',
     'rest_controller_class' => 'WP_REST_Terms_Controller',
