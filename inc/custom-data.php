@@ -80,7 +80,7 @@ function create_type_taxonomies()
 {
   // Add new taxonomy, NOT hierarchical (like tags)
   $labels = array(
-    'name' => _x( 'Types', 'taxonomy general name' ),
+    'name' => _x( 'type', 'taxonomy general name' ),
     'singular_name' => _x( 'Type', 'taxonomy singular name' ),
     'search_items' =>  __( 'Search Types' ),
     'popular_items' => __( 'Popular Types' ),
@@ -97,7 +97,7 @@ function create_type_taxonomies()
   );
 
 //registers taxonomy specific post types - default is just post
-  register_taxonomy('types',array('resource'), array(
+  register_taxonomy('type',array('resource'), array(
     'hierarchical' => true,
     'labels' => $labels,
     'show_ui' => true,

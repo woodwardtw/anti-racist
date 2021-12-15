@@ -42,8 +42,12 @@ function ar_go_to_link(){
     global $post;
     $post_id = $post->ID;
     $link = get_field('link');
-    $type = get_field('type')->name;
-    return "<a class='resource-link btn btn-ar' href='{$link}'>Click to {$type} and Learn</a>";
+    if(get_field('resource_type')[0]){
+        $type = get_field('resource_type')[0]->name;
+    } else {
+        $type = 'learn more';
+    }
+    return "<a class='resource-link btn btn-ar btn-blue' href='{$link}'>Click to {$type}</a>";
 }
 
 
