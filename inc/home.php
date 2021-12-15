@@ -80,7 +80,7 @@ function ar_home_resources($type){
             'orderby'        => 'rand',
             'tax_query' => array( // (array) - use taxonomy parameters (available with Version 3.1).
                 array(
-                  'taxonomy' => 'Types', // (string) - Taxonomy.
+                  'taxonomy' => 'type', // (string) - Taxonomy.
                   'field' => 'slug', // (string) - Select taxonomy term by Possible values are 'term_id', 'name', 'slug' or 'term_taxonomy_id'. Default value is 'term_id'.
                   'terms' => array($type), // (int/string/array) - Taxonomy term(s).                         
                 )
