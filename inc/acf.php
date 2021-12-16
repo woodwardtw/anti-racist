@@ -58,6 +58,9 @@ function ar_person_links($field){
     if(get_field($field)){
         $all = get_field_object($field);
         $label = $all['label'];
+        if($label == 'Site URL'){
+            $label = 'Visit Website';
+        }
         $url = $all['value'];
         $class = $all['name'];
         //var_dump($name);
