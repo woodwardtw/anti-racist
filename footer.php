@@ -79,7 +79,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
 </div>
 <div class="mc-field-group">
-                <label for="mce-FNAME">First Name </label>
+                <label for="mce-FNAME">Name </label>
                 <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
 </div>
                 <div id="mce-responses" class="clear">

@@ -200,12 +200,11 @@
         "author",
         "format",
         "page_attributes",
-        "categories",
         "tags",
         "send-trackbacks"
     ],
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1638457613
+    "modified": 1643402192
 }
