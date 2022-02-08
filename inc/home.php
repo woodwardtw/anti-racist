@@ -58,7 +58,7 @@ function ar_show_four_events(){
         $month = explode(' ',$date)[0];
         $day = explode(' ',$date)[1];
         $title = $event->post_title;
-       $html .=     "<div class='col-md-3'>
+        $html .=     "<div class='col-md-3'>
                  <a href='{$link}'>
                 <div class='event card h-100'>
                     <div class='month'>{$month}</div>
@@ -157,8 +157,8 @@ function ar_home_people(){
                             <div class='{$color}'>
                                 {$img}                            
                             </div>
-                        </a>
-                        <a href='{$url}'>{$title}</a></li>
+                            {$title}
+                       </a>
                     </div>
                         ";
         endwhile;       
