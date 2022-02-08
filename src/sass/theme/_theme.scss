@@ -719,11 +719,11 @@ li.midd-footer__item {
 }
 
 //SVG RANDOM COLORS 
-#random-pattern {
+.random-pattern {
 	border: 5px solid $black;
 }
 
-#random-pattern polygon {
+.random-pattern polygon {
 	&.red {
 		fill: $red;
 		stroke: $red;

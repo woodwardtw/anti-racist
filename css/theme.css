@@ -16791,27 +16791,27 @@ li.midd-footer__item {
   display: block;
 }
 
-#random-pattern {
+.random-pattern {
   border: 5px solid #000;
 }
 
-#random-pattern polygon.red {
+.random-pattern polygon.red {
   fill: #D15252;
   stroke: #D15252;
 }
-#random-pattern polygon.blue {
+.random-pattern polygon.blue {
   fill: #95B1C1;
   stroke: #95B1C1;
 }
-#random-pattern polygon.green {
+.random-pattern polygon.green {
   fill: #556E4E;
   stroke: #556E4E;
 }
-#random-pattern polygon.yellow {
+.random-pattern polygon.yellow {
   fill: #dcbc52;
   stroke: #dcbc52;
 }
-#random-pattern polygon.black {
+.random-pattern polygon.black {
   fill: #000;
   stroke: #000;
 }
