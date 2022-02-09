@@ -9,6 +9,65 @@
 defined( 'ABSPATH' ) || exit;
 
 
+add_action('acf/save_post', 'ar_notify_acf_submit');
+
+function ar_notify_acf_submit( $post_id ) {
+	
+	// bail early if not a contact_form post
+	// if( get_post_type($post_id) !== 'group' || get_post_type($post_id) !== 'person' 
+    //     || get_post_type($post_id) !== 'resource' ) {
+		
+	// 	return;
+		
+	// }
+	
+	// // bail early if editing in admin
+	if( is_admin() ) {
+		
+		return;
+		
+	}
+		
+	
+	// get custom fields (field group exists for content_form)
+    $fields = '';
+    if(get_field('name', $post_id)){
+        $name = get_field('name', $post_id);
+        $fields .= $name . '<br>';
+    }
+    if(get_field('short_biography', $post_id)){
+        $bio = get_field('short_biography', $post_id);
+        $fields .= $bio . '<br>';
+    }
+	if(get_field('summary', $post_id)){
+        $summary = get_field('summary', $post_id);
+        $fields .= $summary . '<br>';
+    }
+    if(get_field('link', $post_id)){
+        $link = get_field('link', $post_id);
+        $fields .= "<a href='{$link}'>{$link}</a>";
+    }
+	
+	
+	// email data
+	$to = 'mdroy@middlebury.edu';
+	$headers = array('Content-Type: text/html; charset=UTF-8');
+	$subject = 'Please review this new submission from the Antiracist site!';
+    $link = get_edit_post_link( $post_id);
+	$body = "<p>You can edit and approve it at the following link. </p>
+            <p><a href='{$link}'>{$link}</a></p>
+            <h2>Preview Data</h2>
+            {$fields}
+            " ;
+	
+	
+	// send email
+	wp_mail($to, $subject, $body, $headers );
+	
+}
+
+
+
 function ar_funding_opps(){
     $html = '';
     if( have_rows('funding_opportunities') ):
