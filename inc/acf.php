@@ -23,9 +23,7 @@ function ar_notify_acf_submit( $post_id ) {
 	
 	// // bail early if editing in admin
 	if( is_admin() ) {
-		
-		return;
-		
+		return;	
 	}
 		
 	
@@ -52,14 +50,13 @@ function ar_notify_acf_submit( $post_id ) {
 	// email data
 	$to = 'mdroy@middlebury.edu';
 	$headers = array('Content-Type: text/html; charset=UTF-8');
-	$subject = 'Please review this new submission from the Antiracist site!';
+	$subject = 'A new submission from the Antiracist site!';
     $link = get_edit_post_link( $post_id);
 	$body = "<p>You can edit and approve it at the following link. </p>
             <p><a href='{$link}'>{$link}</a></p>
-            <h2>Preview Data</h2>
+            <h2>Partial Preview</h2>
             {$fields}
             " ;
-	
 	
 	// send email
 	wp_mail($to, $subject, $body, $headers );
